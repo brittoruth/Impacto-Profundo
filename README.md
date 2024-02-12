@@ -3,7 +3,7 @@ Projeto integrador com foco em Front-end - Talento Cloud - AWS e Proz
 
 O Projeto integrado - AWS -Talento Cloud - Ministrado pelo PROZ. Momento de integrar todos conhecimento adquirido com foco em Front-end.
 
-## ## 🚀 Começando
+## 🚀 Começando
 
 Trata-se de um site voltado para dar suporte as ser humano neste fase de **Ebulição Global** - fase de -.
 
