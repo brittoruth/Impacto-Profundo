@@ -38,7 +38,7 @@ Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 - Alex Costa -
 - Ana Paula Sena da Silva
 - Ruth Britto da Silva - https://www.linkedin.com/in/ruth-britto
-- Sara 
+- Sara Nascimento - https://www.linkedin.com/in/sarardsn/
 
 
 
