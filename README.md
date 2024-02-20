@@ -39,6 +39,7 @@ Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 - Ana Paula Sena da Silva
 - Ruth Britto da Silva - https://www.linkedin.com/in/ruth-britto
 - Sara Nascimento - https://www.linkedin.com/in/sarardsn/
+- Tiago Freitas - https://www.linkedin.com/in/tpfreitas
 
 
 
