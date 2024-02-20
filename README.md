@@ -24,9 +24,7 @@ Quanto as áreas de risco, Orientação médica, Prevenção, impacto em diversa
 
 ## 🛠️ Construído com
 
-- Figma
-- Vsc
-
+![Skills](https://skillicons.dev/icons?i=vscode,figma,html,css,js)
 
 ## 📌 Versão
 
@@ -35,12 +33,20 @@ Nós usamos XXXX para controle de versão. Para as versões disponíveis, XXXXXX
 ## ✒️ Autores
 
 Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
-- Alex Costa -
-- Ana Paula Sena da Silva
-- Ruth Britto da Silva - https://www.linkedin.com/in/ruth-britto
-- Sara Nascimento - https://www.linkedin.com/in/sarardsn/
-- Tiago Freitas - https://www.linkedin.com/in/tpfreitas
 
+![Skills](https://skillicons.dev/icons?i=linkedin,github)
+
+- Alex Costa -
+- Ana Paula Sena da Silva - https://www.linkedin.com/in/paulassena  |   https://github.com/PaulaSena
+- Ruth Britto da Silva - https://www.linkedin.com/in/ruth-britto    |
+- Sara Nascimento - https://www.linkedin.com/in/sarardsn/           |
+- Tiago Freitas - https://www.linkedin.com/in/tpfreitas             |
+<br>
+
+## 👨🏻‍🏫 Tutor Mateus Gesualdo 
+
+https://www.linkedin.com/in/mateus-gesualdo/ <br>
+https://github.com/MateusGesualdo
 
 
 
