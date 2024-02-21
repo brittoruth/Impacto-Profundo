@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --cor-fonte:#0F241D;
+    --cor-plano-fundo:#ffffff;
+    --cor-secundaria:#0081C9;
+    --cor-terciaria:#FFC93C;
+    
+}
+html,body{
+    background-color: var(--cor-plano-fundo);
+}
+header{
+    width: 1366px;
+    height: 72px;
+    max-width: 1366px;
+}
+
+header
+nav{
+    display: flex;
+    
+}
+nav img{
+    height: 72px;
+}
+.divisao_cabecalho{
+    display: flex;
+    margin-left: 53px;
+    width: 388px;
+    max-width: 388px;
+}
+.divisao_cabecalho h2{
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+strong{
+    margin-left: 5px;
+    color:var(--cor-secundaria)
+}
+ul{
+   list-style: none;
+   display: flex;  
+   align-items: center;
+   margin-left:352px;
+   
+} 
+li{
+    margin-left:79px; 
+    
+}  
+li a{
+    text-decoration: none;
+    color:var(--cor-fonte);
+    font-weight: 500;
+}
+a:hover{
+    color: var(--cor-secundaria);
+    text-decoration: underline;
+}
+.section_1{
+    width: 1366px;
+    background-image: url("../../img/planeta_fogo.png");
+    height: 676px;
+    display: flex;
+    flex-direction: column;    
+}
+.section_1 h1{
+    margin-top: 179px;
+    margin-left: 123px;
+    color: var(--cor-plano-fundo);
+    width: 489px;
+    height: 108px;
+}
+.section_1 p{
+    margin-top: 12px;
+    margin-left: 123px;
+    color: var(--cor-plano-fundo);
+    width: 414px;
+    height: 46px;
+}
+.section_1 span{
+    font-size: 20px;
+    margin-left: 123px;
+    margin-top: 24px;
+    background-color: var(--cor-terciaria) ;
+    height: 55px;
+    width: 169px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: 700 ;
+    cursor: pointer;
+}
+
