@@ -42,12 +42,9 @@ main {
   padding: 0 20px;
 }
 
-/*-----------------------------------------------------------------*/
-/* generic styles */
-
 .dsc-container {
   width: 100%;
-  max-width: 960px;
+  
   margin: 0 auto;
 }
 
@@ -76,8 +73,7 @@ main {
   }
 }
 
-/*-----------------------------------------------------------------*/
-/* header styles */
+
 
 header {
   height: 70px;
@@ -164,8 +160,6 @@ nav a {
   }
 }
 
-/*-----------------------------------------------------------------*/
-/* card styles */
 
 .dsc-card {
   border: 1px solid var(--dsc-color-card-border);
@@ -177,8 +171,7 @@ nav a {
   border-bottom: 1px solid var(--dsc-color-card-border);
 }
 
-/*-----------------------------------------------------------------*/
-/* button styles */
+
 
 .dsc-btn-page-container {
   width: 100%;
@@ -227,8 +220,7 @@ nav a {
   cursor: pointer;
 }
 
-/*-----------------------------------------------------------------*/
-/* search bar styles */
+
 
 .dsc-search-bar {
   height: 40px;
@@ -272,8 +264,7 @@ nav a {
   border-radius: 0 4px 4px 0;
 }
 
-/*-----------------------------------------------------------------*/
-/* form styles */
+
 
 .dsc-form {
   display: flex;
@@ -349,8 +340,7 @@ nav a {
   }
 }
 
-/*-----------------------------------------------------------------*/
-/* table styles */
+
 
 .dsc-table {
   width: 100%;
