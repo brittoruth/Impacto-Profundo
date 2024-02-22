@@ -14,12 +14,26 @@ Quanto as áreas de risco, Orientação médica, Prevenção, impacto em diversa
 
 ### 🔧 Implantação
 
-**07/02/2024** - Formação das Equipes;  
-**14/02/2024** - **Sprint I** - PI + temática + formação dos grupos + layout    
-**21/02/2024** - **Sprint II**   
-**25/03/2024** - **Sprint III**  
-**14/04/2024** - **Sprint IV**  
-**24/04/2024** - **Sprint V**  
+
+| Data         | Atividades                                                | Pasta |
+|--------------|-----------------------------------------------------------|-------|
+| 07/02/2024   | Formação das Equipes;                                     | 📁   |
+| 14/02/2024   | Sprint I - PI + temática + formação dos grupos + layout   | 📁   |
+| 21/02/2024   | Sprint II                                                 | 📁   |
+| 25/03/2024   | Sprint III                                                | 📁   |
+| 14/04/2024   | Sprint IV                                                 | 📁   |
+| 24/04/2024   | Sprint V                                                  | 📁   |
+
+| Nome       | Link                                              |
+|------------|----------------------------------------------------|
+| Ruth       | [📁](https://github.com/...)        |
+| Alex       | [📁](https://github.com/...)        |
+| Sara       | [📁](https://github.com/...)        |
+| Ana Paula  | [📁](https://github.com/...)        |
+| Tiago      | [📁](https://github.com/...)        |
+| Daniel     | [📁](https://github.com/...)         |
+
+
 
 
 ## 🛠️ Construído com
