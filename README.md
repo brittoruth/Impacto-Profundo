@@ -41,7 +41,7 @@ Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 - Ruth Britto da Silva - https://www.linkedin.com/in/ruth-britto    |
 - Sara Nascimento - https://www.linkedin.com/in/sarardsn/           |
 - Tiago Freitas - https://www.linkedin.com/in/tpfreitas             |
-- Daniel M. de Carvalho -
+- Daniel Monteiro de Carvalho - https://www.linkedin.com/in/daniel-m-carvalho | https://github.com/danimcarv
   
 <br>
 
