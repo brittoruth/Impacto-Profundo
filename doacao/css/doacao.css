@@ -1,5 +1,27 @@
 @import url("../../css/style.css");
+:root {
+  --cor-fonte: #0F241D;
+  --cor-plano-fundo: #ffffff;
+  --cor-secundaria: #0081C9;
+  --cor-terciaria: #FFC93C;
+  --dsc-color-bg-primary: #e8e8e8;
+  --dsc-color-bg-secondary: #ffe500;
+  --dsc-color-bg-tertiary: #636363;
+  --dsc-color-bg-quaternary: #0caf1d;
 
+  --dsc-color-card-bg: #fff;
+  --dsc-color-card-border: #d9d9d9;
+
+  --dsc-color-btn-primary: #3483fa;
+  
+
+  --dsc-color-font-primary: #636363;
+  --dsc-color-font-secondary: #0caf1d;
+  --dsc-color-font-tertiary: #fff;
+  --dsc-color-font-placeholder: #d9d9d9;
+
+  --dsc-color-error: #f33;
+}
 
 #catalogo-section {
   padding: 20px 0;
@@ -31,15 +53,23 @@
 .dsc-catalogo-card-bottom h3 {
   color: var(--dsc-color-font-secondary);
   font-size: 20px;
+  text-align: center;
+  padding-bottom: 3%;
 }
 
 .dsc-catalogo-card-bottom h4 {
   color: var(--dsc-color-font-primary);
   font-size: 12px;
+  text-align: center;
+  padding-bottom: 3%;
 }
 
 
 .dsc-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   border: 1px solid var(--dsc-color-card-border);
   border-radius: 4px;
   background-color: var(--dsc-color-card-bg);
@@ -87,4 +117,19 @@
 .dsc-search-bar button[type="reset"] {
   border-left: none;
   border-radius: 0 4px 4px 0;
+}
+.dsc-card img{
+  width: 100%;
+  height: 90%;
+}
+.adicionarCarrinho{
+  display: flex;
+  background-color: var(--cor-plano-fundo);
+  border-color: var(--cor-secundaria);
+  width: 100%;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  
+
 }
