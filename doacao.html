@@ -1,187 +1,206 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
 
-    <link rel="stylesheet" href="./doacao/css/doacao.css" />
-    
-  </head>
-  <body>
-    <header class="cabecalho">
-      <nav class="cabecalho_menu">
-         <div class="divisao_cabecalho"><img src="img/header.png" alt="globo">
-          <h2>Impacto<strong>Profundo</strong></h2>
-          </div>           
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+
+  <link rel="stylesheet" href="./doacao/css/doacao.css" />
+
+</head>
+
+<body>
+  <header class="cabecalho">
+    <nav class="cabecalho_menu">
+
+      <span class="divisao_cabecalho"><img src="img/header.png" alt="globo">
+        <h2>Impacto<strong>Profundo</strong></h2>
+        <span class="mobile-menu-icon">
+          <button onclick="menuShow()"><img class="icon" src="./img/iconeMenu.png" alt=""></button>
+        </span>
+      </span>
+
+      <div class="mobile-menu">
+        <div class="classeMenu" class="mobile-menu">
           <ul class="menu">
-              
-              <li>
-                  <a class="cabecalho__menu__link" href="index.html">Início</a>
-              </li>
-              <li>
-                  <a class="cabecalho__menu__link" href="sobre.html">Sobre</a>
-              </li>
-              <li>
-                  <a class="cabecalho__menu__link" href="saude.html">Saúde</a>
-              </li>
-              <li>
-                  <a class="cabecalho__menu__link" href="doacao.html">Doacao</a>
-              </li>
-              <li>
-                  <a class="cabecalho__menu__link" href="contato.html">Contato</a>
-              </li>
-          </ul>
-         
-      </nav>
-    </header>
-    <main>
-      <section id="catalog-section" class="dsc-container">
-        <form class="dsc-search-bar">
-          <button type="submit">🔎︎</button>
-          <input type="text" placeholder="Nome do produto" />
-          <button type="reset">🗙</button>
-        </form>
 
-        <div class="dsc-catalog-cards dsc-mb20 dsc-mt20">
-          <div class="dsc-card">
-            <div class="dsc-catalog-card-top dsc-line-bottom">
-              <img src="./doacao/img/camisa branca.png" alt="Camisa" />
-            </div>
-            <div class="dsc-catalog-card-bottom">
-              <h3>R$ 50,00</h3>
-              <h4>
-                Camisa Branca
-              </h4>
-            </div>
+            <li>
+              <a class="cabecalho__menu__link" class="nav-link" href="index.html">Início</a>
+            </li>
+
+            <li>
+              <a class="cabecalho__menu__link" class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+
+            <li>
+              <a class="cabecalho__menu__link" class="nav-link" href="saude.html">Saúde</a>
+            </li>
+
+            <li>
+              <a class="cabecalho__menu__link" class="nav-link" href="doacao.html">Doacao</a>
+            </li>
+
+            <li>
+              <a class="cabecalho__menu__link" class="nav-link" href="contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+
+    </nav>
+  </header>
+  <main>
+    <section id="catalogo-section" class="dsc-container">
+      <form class="dsc-search-bar">
+        <button type="submit">🔎︎</button>
+        <input type="text" placeholder="Nome do produto" />
+        <button type="reset">🗙</button>
+      </form>
+
+      <div class="dsc-catalogo-cards dsc-mb20 dsc-mt20">
+        <div class="dsc-card">
+          <div class="dsc-catalogo-card-top dsc-line-bottom">
+            <img src="./doacao/img/Camisa_branca.png" alt="Camisa Preta" />
           </div>
-          <div class="dsc-card">
-            <div class="dsc-catalog-card-top dsc-line-bottom">
-              <img src="./doacao/img/Caneca azul.png" alt="Caneca" />
-            </div>
-            <div class="dsc-catalog-card-bottom">
-              <h3>R$ 50,00</h3>
-              <h4>
-                Caneca Azul
-              </h4>
-            </div>
-          </div>
-          <div class="dsc-card">
-            <div class="dsc-catalog-card-top dsc-line-bottom">
-              <img src="./doacao/img/Caneca laranja.png" alt="Caneca" />
-            </div>
-            <div class="dsc-catalog-card-bottom">
-              <h3>R$ 50,00</h3>
-              <h4>
-                Caneca Laranja
-              </h4>
-            </div>
-          </div>
-          <div class="dsc-card">
-            <div class="dsc-catalog-card-top dsc-line-bottom">
-              <img src="./doacao/img/Caneca verde.png" alt="Caneca" />
-            </div>
-            <div class="dsc-catalog-card-bottom">
-              <h3>R$ 50,00</h3>
-              <h4>
-                Caneca Verde
-              </h4>
-            </div>
-          </div>
-          <div class="dsc-card">
-            <div class="dsc-catalog-card-top dsc-line-bottom">
-              <img src="./doacao/img/CLIMATE CHANGE.png" alt="Camisa" />
-            </div>
-            <div class="dsc-catalog-card-bottom">
-              <h3>R$ 5000,00</h3>
-              <h4>
-                Computador Gamer XT
-              </h4>
-            </div>
-          </div>
-          <div class="dsc-card">
-            <div class="dsc-catalog-card-top dsc-line-bottom">
-              <img src="./doacao/img/JUNTOS É MELHOR!.png" alt="Computer" />
-            </div>
-            <div class="dsc-catalog-card-bottom">
-              <h3>R$ 5000,00</h3>
-              <h4>
-                Computador Gamer XT
-              </h4>
-            </div>
-          </div>
-          <div class="dsc-card">
-            <div class="dsc-catalog-card-top dsc-line-bottom">
-              <img src="./doacao/img/OXIGÊNIO.png" alt="Computer" />
-            </div>
-            <div class="dsc-catalog-card-bottom">
-              <h3>R$ 5000,00</h3>
-              <h4>
-                Computador Gamer XT
-              </h4>
-            </div>
-          </div>
-          <div class="dsc-card">
-            <div class="dsc-catalog-card-top dsc-line-bottom">
-              <img src="./doacao/img/Preta 1.png" alt="Computer" />
-            </div>
-            <div class="dsc-catalog-card-bottom">
-              <h3>R$ 5000,00</h3>
-              <h4>
-                Computador Gamer XT
-              </h4>
-            </div>
-          </div>
-          <div class="dsc-card">
-            <div class="dsc-catalog-card-top dsc-line-bottom">
-              <img src="./doacao/img/Preta 2.png" alt="Computer" />
-            </div>
-            <div class="dsc-catalog-card-bottom">
-              <h3>R$ 5000,00</h3>
-              <h4>
-                Computador Gamer XT
-              </h4>
-            </div>
-          </div>
-          <div class="dsc-card">
-            <div class="dsc-catalog-card-top dsc-line-bottom">
-              <img src="./doacao/img/Preta 3.png" alt="Computer" />
-            </div>
-            <div class="dsc-catalog-card-bottom">
-              <h3>R$ 5000,00</h3>
-              <h4>
-                Computador Gamer XT
-              </h4>
-            </div>
-          </div>
-          <div class="dsc-card">
-            <div class="dsc-catalog-card-top dsc-line-bottom">
-              <img src="./doacao/img/Preta 2.png" alt="Computer" />
-            </div>
-            <div class="dsc-catalog-card-bottom">
-              <h3>R$ 5000,00</h3>
-              <h4>
-                Computador Gamer XT
-              </h4>
-            </div>
-          </div>
-          <div class="dsc-card">
-            <div class="dsc-catalog-card-top dsc-line-bottom">
-              <img src="./doacao/img/Preta 2.png" alt="Computer" />
-            </div>
-            <div class="dsc-catalog-card-bottom">
-              <h3>R$ 50,00</h3>
-              <h4>
-                Computador Gamer XT
-              </h4>
-            </div>
+          <div class="dsc-catalogo-card-bottom">
+            <h3>R$ 50,00</h3>
+            <h4>
+              Camisa Preta Branca
+            </h4>
           </div>
         </div>
-        
+        <div class="dsc-card">
+          <div class="dsc-catalogo-card-top dsc-line-bottom">
+            <img src="./doacao/img/Caneca_azul.png" alt="Caneca" />
+          </div>
+          <div class="dsc-catalogo-card-bottom">
+            <h3>R$ 50,00</h3>
+            <h4>
+              Caneca Azul
+            </h4>
+          </div>
+        </div>
+        <div class="dsc-card">
+          <div class="dsc-catalogo-card-top dsc-line-bottom">
+            <img src="./doacao/img/Caneca_laranja.png" alt="Caneca" />
+          </div>
+          <div class="dsc-catalogo-card-bottom">
+            <h3>R$ 50,00</h3>
+            <h4>
+              Caneca Laranja
+            </h4>
+          </div>
+        </div>
+        <div class="dsc-card">
+          <div class="dsc-catalogo-card-top dsc-line-bottom">
+            <img src="./doacao/img/Caneca_verde.png" alt="Caneca" />
+          </div>
+          <div class="dsc-catalogo-card-bottom">
+            <h3>R$ 50,00</h3>
+            <h4>
+              Caneca Verde
+            </h4>
+          </div>
+        </div>
+        <div class="dsc-card">
+          <div class="dsc-catalogo-card-top dsc-line-bottom">
+            <img src="./doacao/img/CLIMATE_CHANGE.png" alt="Camisa Preta" />
+          </div>
+          <div class="dsc-catalogo-card-bottom">
+            <h3>R$ 5000,00</h3>
+            <h4>
+              Camisa CLIMATE CHANGE
+            </h4>
+          </div>
+        </div>
+        <div class="dsc-card">
+          <div class="dsc-catalogo-card-top dsc-line-bottom">
+            <img src="./doacao/img/JUNTOS.png" alt="Computer" />
+          </div>
+          <div class="dsc-catalogo-card-bottom">
+            <h3>R$ 5000,00</h3>
+            <h4>
+              Camisa JUNTOS É MELHOR!
+            </h4>
+          </div>
+        </div>
+        <div class="dsc-card">
+          <div class="dsc-catalogo-card-top dsc-line-bottom">
+            <img src="./doacao/img/OXIGÊNIO.png" alt="Computer" />
+          </div>
+          <div class="dsc-catalogo-card-bottom">
+            <h3>R$ 180,00</h3>
+            <h4>
+              Camisa Preta OXIGÊNIO
+            </h4>
+          </div>
+        </div>
+        <div class="dsc-card">
+          <div class="dsc-catalogo-card-top dsc-line-bottom">
+            <img src="./doacao/img/Preta_1.png" alt="Computer" />
+          </div>
+          <div class="dsc-catalogo-card-bottom">
+            <h3>R$ 200,00</h3>
+            <h4>
+              Camisa Preta
+            </h4>
+          </div>
+        </div>
+        <div class="dsc-card">
+          <div class="dsc-catalogo-card-top dsc-line-bottom">
+            <img src="./doacao/img/Preta_2.png" alt="Computer" />
+          </div>
+          <div class="dsc-catalogo-card-bottom">
+            <h3>R$ 80,00</h3>
+            <h4>
+              Camisa Preta
+            </h4>
+          </div>
+        </div>
+        <div class="dsc-card">
+          <div class="dsc-catalogo-card-top dsc-line-bottom">
+            <img src="./doacao/img/Preta_3.png" alt="Computer" />
+          </div>
+          <div class="dsc-catalogo-card-bottom">
+            <h3>R$ 70,00</h3>
+            <h4>
+              Camisa Preta
+            </h4>
+          </div>
+        </div>
+        <div class="dsc-card">
+          <div class="dsc-catalogo-card-top dsc-line-bottom">
+            <img src="./doacao/img/Preta_2.png" alt="Computer" />
+          </div>
+          <div class="dsc-catalogo-card-bottom">
+            <h3>R$ 100,00</h3>
+            <h4>
+              Camisa Preta
+            </h4>
+          </div>
+        </div>
+        <div class="dsc-card">
+          <div class="dsc-catalogo-card-top dsc-line-bottom">
+            <img src="./doacao/img/Preta_4.png" alt="Computer" />
+          </div>
+          <div class="dsc-catalogo-card-bottom">
+            <h3>R$ 50,00</h3>
+            <h4>
+              Camisa Preta
+            </h4>
+          </div>
+        </div>
+      </div>
 
-       
-      </section>
-    </main>
-  </body>
+
+
+    </section>
+  </main>
+  <script src="/js/script.js"></script>
+</body>
+
 </html>
