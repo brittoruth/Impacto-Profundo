@@ -32,6 +32,8 @@ body {
     background-color: var(--cor-plano-fundo);
     width: 100vw;
     height: 100vh;
+    padding-left: 1%;
+    padding-right: 1%;
 
 }
 
