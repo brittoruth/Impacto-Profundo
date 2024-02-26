@@ -90,11 +90,11 @@ ul li a {
     font-size: 1.1rem;
 }
 
-.mobile-menu-icon {
+.menu-icon {
     display: none;
 }
 
-.mobile-menu {
+.menu {
     display: none;
 }
 
@@ -113,7 +113,7 @@ ul li a {
         display: none;
     }
 
-    .mobile-menu-icon {
+    .menu-icon {
         display: flex;
         justify-content: end;
         width: 100%;
@@ -121,14 +121,14 @@ ul li a {
 
     }
 
-    .mobile-menu-icon button {
+    .menu-icon button {
         background-color: transparent;
         border: none;
         cursor: pointer;
         padding-right: 10%;
     }
 
-    .mobile-menu ul {
+    .menu ul {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -137,17 +137,17 @@ ul li a {
 
 
     }
-    .mobile-menu .cabecalho__menu__link {
+    .menu .cabecalho__menu__link {
         display: block;
         padding-top: 1.2rem;
     }
 
-    .mobile-menu .login-button {
+    .menu .login-button {
         display: block;
         padding: 1rem 2rem;
     }
 
-    .mobile-menu {
+    .menu {
         width: 100%;
 
     }
@@ -167,7 +167,7 @@ ul li a {
         list-style: none;
     }
 
-    .mobile-menu {
+    .menu {
         display: flex;
         align-self: center;
 
@@ -178,7 +178,7 @@ ul li a {
         padding-right: 10%;
     }
 
-    .menu {
+    .menu-ul {
         display: flex;
     }
 
@@ -188,7 +188,7 @@ ul li a {
         justify-content: space-between;
     }
 
-    .mobile-menu {
+    .menu {
         justify-content: center;
     }
 }
@@ -238,52 +238,3 @@ a:hover {
     font-weight: 700;
     cursor: pointer;
 }
-
-
-
-/*@media(min-width:768px){
-
-.section_1{
-    width: 1366px;
-    background-image: url("../../img/planeta_fogo.png");
-    height: 676px;
-    display: flex;
-    flex-direction: column;
-        
-}
-main{
-    margin:0 53px 0 53px;
-}
-.section_1 h1{
-    margin-top: 179px;
-    margin-left: 123px;
-    color: var(--cor-plano-fundo);
-    width: 489px;
-    height: 108px;
-}
-.section_1 p{
-    margin-top: 12px;
-    margin-left: 123px;
-    color: var(--cor-plano-fundo);
-    width: 414px;
-    height: 46px;
-}
-.section_1 span{
-    font-size: 20px;
-    margin-left: 123px;
-    margin-top: 24px;
-    background-color: var(--cor-terciaria) ;
-    height: 55px;
-    width: 169px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    border-radius: 4px;
-    font-weight: 700 ;
-    cursor: pointer;
-}
-}
-@media(min-width:576px){
-    
-}*/
