@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacto Profundo</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <div class="divisao_cabecalho"><img src="img/header.png" alt="globo">
+                <h2>Impacto<strong>Profundo</strong></h2>
+            </div>
+
+
+            <ul>
+                <li>
+                    <a class="cabecalho__menu__link" href="index.html">Início</a>
+                </li>
+                <li>
+                    <a class="cabecalho__menu__link" href="sobre.html">Sobre</a>
+                </li>
+                <li>
+                    <a class="cabecalho__menu__link" href="saude.html">Saúde</a>
+                </li>
+                <li>
+                    <a class="cabecalho__menu__link" href="doacao.html">Doacao</a>
+                </li>
+                <li>
+                    <a class="cabecalho__menu__link" href="contato.html">Contato</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <section class="section_1">
+            <h1>Ebulição Global:<br> Entendendo o Fenômeno</h1>
+            <p>Para saber mais a respeito clique no botão abaixo para acessar as informações atualizadas</p>
+            <span><a>Saiba Mais </a></span>
+        </section>
+
+        <!-- Section CONTATO -->
+        <section class="section_1 contato">
+
+            <!-- Mapas 1 e  Formulario -->
+            <div class="row"> <!-- Linha 1-->
+                <div class="col-6"> <!-- Coluna 1 | Mapa -->
+                    <h1>Mapa</h1>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14626.289401635664!2d-46.931951749999996!3d-23.583797899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1707947454515!5m2!1spt-BR!2sbr"
+                        style="border:0;" width="100%" height="500fr" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+                <!-- Formulario -->
+                <div class="col-6"> <!-- Coluna 2 | Formulário -->
+                    <h1>Formulário</h1>
+                    <form action="">
+
+                        <!-- Etapa 1: barra progress-->
+                        <div class="etapas">
+                            <div class="progress-bar">
+                                <div class="step step-1"><span>1</span></div>
+                                <div class="step step-2"><span>2</span></div>
+                                <div class="step step-3"><span>3</span></div>
+                                <div class="progress"></div>
+                            </div>
+                            <!-- Etapa 1: Informações -->
+
+                            <div class="etapa-formulario etapa-1 etapa-atual">
+                                <h3>Cadastro de Informações de Risco Ambiental</h3>
+
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="nome" name="nome" placeholder="Nome Completo" value="" required>
+
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Email" value="" required>
+
+                                <label for="data">Data:</label>
+                                <input type="date" id="data" name="data" value="" required>
+
+                                <label for="hora">Hora:</label>
+                                <input type="time" id="hora" name="hora" value="" required><br>
+
+                                <label for="localizacao">Localização:</label>
+                                <input type="localizacao" id="localizacao" name="localizacao"
+                                    placeholder="Rua: José dias, nº 379,  " value="" required>
+                                <!-- Google Maps -->
+                                <div id="map">
+                                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14626.289401635664!2d-46.931951749999996!3d-23.583797899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1707947454515!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                                </div>
+
+                                <label for="risco">Nível de Risco:</label>
+                                <select id="risco" name="risco" required>
+                                    <option value="baixo">Baixo</option>
+                                    <option value="médio" selected>Médio</option>
+                                    <option value="alto">Alto</option>
+                                </select>
+                                <br>
+                                <hr>
+
+                                <button type="button">Continuar</button>
+                                <br>
+                            </div>
+                            <br>
+
+                            <!-- Etapa 2: Detalhes Sobre Riscos Ambientais -->
+                            <div class="etapa-formulario etapa-2">
+
+                                <label for="qtdPessoas">Quantidade de Pessoas Afetadas</label>
+                                <input type="text" id="qtdPessoas" name="qtdPessoas" value="" required><br>
+                                <label for="causas">Principais Causas:</label>
+                                <select id="causas" name="causas" required>
+                                    <optgroup label="Principais Causas">
+                                        <option value="calor-excessivo">Calor Excessivo</option>
+                                        <option value="desmatamento">Desmatamento</option>
+                                        <option value="poluicao">Poluição</option>
+                                        <option value="alta-temperatura">Alta Temperatura</option>
+                                        <option value="enchente">Enchente</option>
+                                        <option value="vento-forte">Vento Forte</option>
+                                        <option value="chuva-intensa">Chuva Intensa</option>
+                                        <option value="granizo-de-chuva">Granizo de Chuva</option>
+                                        <option value="alagamento">Alagamento</option>
+                                        <option value="deslizamento-de-terra">Deslizamento de Terra</option>
+                                        <option value="terremoto">Terremoto</option>
+                                        <option value="tempestade">Tempestade</option>
+                                        <option value="furacao">Furacão</option>
+                                        <option value="incendio-florestal">Incêndio Florestal</option>
+                                        <option value="poluicao-ar">Poluição do Ar</option>
+                                        <option value="seca">Seca</option>
+                                        <option value="tsunami">Tsunami</option>
+                                        <option value="nevasca">Nevasca</option>
+                                    </optgroup>
+                                </select>
+                                <br>
+
+                                <label for="outrasCausas">Outras Causas:</label><br>
+                                <textarea id="outrasCausas" name="outrasCausas" rows="4"></textarea><br>
+
+                                <label for="sugestao">Elogios e Sugestão de Melhorias:</label><br>
+                                <textarea id="sugestao" name="sugestao" rows="4"></textarea>
+
+                                <hr>
+                                <!--<button type="button" onclick="proximoEtapa() & exibirDados()">Continuar</button>-->
+
+
+                            </div>
+
+                            <!-- Etapa 3: Detalhes Ambientais -->
+                            <div class="etapa-formulario etapa-3">
+
+                                <section>
+                                    <div id="dados-cadastrado"></div>
+                                </section>
+                                <button type="button" onclick="etapaAnterior()">Etapa Anterior</button>
+
+                                <button type="submit" onclick="enviarFormulario(event)">Enviar</button>
+                            </div>
+                            <!--- <button onclick="exibirDados()">Confirmar</button> -->
+
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+            <!-- Mapas -->
+            <div class="row"> <!-- Linha 2-->
+                <div class="col-12">
+                    <h6>Prevenção</h6>
+                    <h1>Localizaçoes</h1>
+                    <!-- Mapas 2-->
+                    <div class="col-6"> <!-- Coluna 1 | Mapa 2 -->
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14626.289401635664!2d-46.931951749999996!3d-23.583797899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1707947454515!5m2!1spt-BR!2sbr"
+                            style="border:0;" width="100%" height="500fr" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+                        <div class="col-6">
+
+                            <div class="row"> <!-- Linha detalhes telefone e localização -->
+                                <div class="col">
+                                    <h5>São Paulo</h5>
+
+                                    <p>1698 Republica SP</p>
+                                    <ul>
+                                        <li>Telefone</li>
+                                        <li>Ver Mapa ></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mapas 3 -->
+                    <div class="col-6"> <!-- Coluna 2 | Mapa 3 -->
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14626.289401635664!2d-46.931951749999996!3d-23.583797899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1707947454515!5m2!1spt-BR!2sbr"
+                            style="border:0;" width="100%" height="500fr" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="col-6">
+
+                            <div class="row"> <!-- Linha detalhes telefone e localização -->
+                                <div class="col">
+                                    <h5>São Paulo</h5>
+                                    <p>123 Avenida Paulista SP</p>
+                                    <ul>
+                                        <li>Telefone</li>
+                                        <li>Ver Mapa ></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
