@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title></title>
 
-  <link rel="stylesheet" href="./doacao/css/doacao.css" />
+  <link rel="stylesheet" href="./css/doacao.css" />
 
 </head>
 
@@ -53,9 +53,9 @@
 
     </nav>
   </header>
-  <main>
-    <section id="catalogo-section" class="dsc-container">
-      <form class="dsc-search-bar">
+  <main >
+    <section id="catalogo-section" class="impacto-container">
+      <form class="impacto-search-bar">
         <button type="submit">🔎︎</button>
         <input type="text" placeholder="Nome do produto" />
         <button type="reset">🗙</button>
@@ -74,152 +74,225 @@
 
 
       </select>
-      <div class="dsc-catalogo-cards dsc-mb20 dsc-mt20">
-        <div class="dsc-card">
-          <div class="dsc-catalogo-card-top dsc-line-bottom">
-            <img src="./doacao/img/Camisa_branca.png" alt="Camisa Preta" />
+      <div class="impacto-catalogo-cards">
+        <div class="impacto-card">
+          <div class="impacto-catalogo-card-top impacto-line-bottom">
+            <img src="./doacao/img/Camisa_branca.png" alt="Camisa Preta" class="produto-image"/>
           </div>
-          <div class="dsc-catalogo-card-bottom">
-            <h3>R$ 50,00</h3>
-            <h4>
+          <div class="impacto-catalogo-card-bottom">
+            <span class="produto-price"><h3>R$ 50,00</h3></span>
+            <h4 class="produto-title">
               Camisa Preta Branca
-            </h4>
-            <button class="adicionarCarrinho" onclick="" ><h5>adicionar ao carrinho</h5></button>
+            </h4 >
+            <button class="adicionarCarrinho button-hover-background" >adicionar ao carrinho</button>
           </div>
         </div>
-        <div class="dsc-card">
-          <div class="dsc-catalogo-card-top dsc-line-bottom">
-            <img src="./doacao/img/Caneca_azul.png" alt="Caneca" />
+        <div class="impacto-card">
+          <div class="impacto-catalogo-card-top impacto-line-bottom">
+            <img src="./doacao/img/Caneca_azul.png" alt="Caneca" class="produto-image" />
           </div>
-          <div class="dsc-catalogo-card-bottom">
-            <h3>R$ 50,00</h3>
-            <h4>
+          <div class="impacto-catalogo-card-bottom">
+            <span class="produto-price"><h3>R$ 50,00</h3></span>
+            <h4 class="produto-title" >
               Caneca Azul
-            </h4>
-            <button class="adicionarCarrinho" onclick="" ><h5>adicionar ao carrinho</h5></button>
+            </h4 >
+            <button class="adicionarCarrinho button-hover-background"  >adicionar ao carrinho</button>
           </div>
         </div>
-        <div class="dsc-card">
-          <div class="dsc-catalogo-card-top dsc-line-bottom">
-            <img src="./doacao/img/Caneca_laranja.png" alt="Caneca" />
+        <div class="impacto-card">
+          <div class="impacto-catalogo-card-top impacto-line-bottom">
+            <img src="./doacao/img/Caneca_laranja.png" alt="Caneca" class="produto-image" />
           </div>
-          <div class="dsc-catalogo-card-bottom">
-            <h3>R$ 50,00</h3>
-            <h4>
+          <div class="impacto-catalogo-card-bottom">
+            <span class="produto-price"><h3>R$ 50,00</h3></span>
+            <h4 class="produto-title" >
               Caneca Laranja
-            </h4>
-            <button class="adicionarCarrinho" onclick="" ><h5>adicionar ao carrinho</h5></button>
+            </h4 >
+            <button class="adicionarCarrinho button-hover-background"  >adicionar ao carrinho</button>
           </div>
         </div>
-        <div class="dsc-card">
-          <div class="dsc-catalogo-card-top dsc-line-bottom">
-            <img src="./doacao/img/Caneca_verde.png" alt="Caneca" />
+        <div class="impacto-card">
+          <div class="impacto-catalogo-card-top impacto-line-bottom">
+            <img src="./doacao/img/Caneca_verde.png" alt="Caneca" class="produto-image" />
           </div>
-          <div class="dsc-catalogo-card-bottom">
-            <h3>R$ 50,00</h3>
-            <h4>
+          <div class="impacto-catalogo-card-bottom">
+            <span class="produto-price"><h3>R$ 50,00</h3></span>
+            <h4 class="produto-title" >
               Caneca Verde
-            </h4>
-            <button class="adicionarCarrinho" onclick="" ><h5>adicionar ao carrinho</h5></button>
+            </h4 >
+            <button class="adicionarCarrinho button-hover-background"  >adicionar ao carrinho</button>
           </div>
         </div>
-        <div class="dsc-card">
-          <div class="dsc-catalogo-card-top dsc-line-bottom">
-            <img src="./doacao/img/CLIMATE_CHANGE.png" alt="Camisa Preta" />
+        <div class="impacto-card">
+          <div class="impacto-catalogo-card-top impacto-line-bottom">
+            <img src="./doacao/img/Caneca_azul.png" alt="Caneca" class="produto-image" />
           </div>
-          <div class="dsc-catalogo-card-bottom">
-            <h3>R$ 5000,00</h3>
-            <h4>
-              Camisa CLIMATE CHANGE
-            </h4>
-            <button class="adicionarCarrinho" onclick="" ><h5>adicionar ao carrinho</h5></button>
-          </div>
-        </div>
-        <div class="dsc-card">
-          <div class="dsc-catalogo-card-top dsc-line-bottom">
-            <img src="./doacao/img/JUNTOS.png" alt="Computer" />
-          </div>
-          <div class="dsc-catalogo-card-bottom">
-            <h3>R$ 70,00</h3>
-            <h4>
-              Camisa JUNTOS É MELHOR!
-            </h4>
-            <button class="adicionarCarrinho" onclick="" ><h5>adicionar ao carrinho</h5></button>
+          <div class="impacto-catalogo-card-bottom">
+            <span class="produto-price"><h3>R$ 50,00</h3></span>
+            <h4 class="produto-title" >
+              Caneca Azul
+            </h4 >
+            <button class="adicionarCarrinho button-hover-background"  >adicionar ao carrinho</button>
           </div>
         </div>
-        <div class="dsc-card">
-          <div class="dsc-catalogo-card-top dsc-line-bottom">
-            <img src="./doacao/img/OXIGÊNIO.png" alt="Computer" />
+        <div class="impacto-card">
+          <div class="impacto-catalogo-card-top impacto-line-bottom">
+            <img src="./doacao/img/Caneca_laranja.png" alt="Caneca" class="produto-image" />
           </div>
-          <div class="dsc-catalogo-card-bottom">
-            <h3>R$ 180,00</h3>
-            <h4>
-              Camisa Preta OXIGÊNIO
-            </h4>
-            <button class="adicionarCarrinho" onclick="" ><h5>adicionar ao carrinho</h5></button>
-          </div>
-        </div>
-        <div class="dsc-card">
-          <div class="dsc-catalogo-card-top dsc-line-bottom">
-            <img src="./doacao/img/Preta_1.png" alt="Computer" />
-          </div>
-          <div class="dsc-catalogo-card-bottom">
-            <h3>R$ 200,00</h3>
-            <h4>
-              Camisa Preta
-            </h4>
-            <button class="adicionarCarrinho" onclick="" ><h5>adicionar ao carrinho</h5></button>
+          <div class="impacto-catalogo-card-bottom">
+            <span class="produto-price"><h3>R$ 50,00</h3></span>
+            <h4 class="produto-title" >
+              Caneca Laranja
+            </h4 >
+            <button class="adicionarCarrinho button-hover-background"  >adicionar ao carrinho</button>
           </div>
         </div>
-        <div class="dsc-card">
-          <div class="dsc-catalogo-card-top dsc-line-bottom">
-            <img src="./doacao/img/Preta_2.png" alt="Computer" />
+        <div class="impacto-card">
+          <div class="impacto-catalogo-card-top impacto-line-bottom">
+            <img src="./doacao/img/Caneca_verde.png" alt="Caneca" class="produto-image" />
           </div>
-          <div class="dsc-catalogo-card-bottom">
-            <h3>R$ 80,00</h3>
-            <h4>
-              Camisa Preta
-            </h4>
-            <button class="adicionarCarrinho" onclick="" ><h5>adicionar ao carrinho</h5></button>
-          </div>
-        </div>
-        <div class="dsc-card">
-          <div class="dsc-catalogo-card-top dsc-line-bottom">
-            <img src="./doacao/img/Preta_3.png" alt="Computer" />
-          </div>
-          <div class="dsc-catalogo-card-bottom">
-            <h3>R$ 70,00</h3>
-            <h4>
-              Camisa Preta
-            </h4>
-            <button class="adicionarCarrinho" onclick="" ><h5>adicionar ao carrinho</h5></button>
+          <div class="impacto-catalogo-card-bottom">
+            <span class="produto-price"><h3>R$ 50,00</h3></span>
+            <h4 class="produto-title" >
+              Caneca Verde
+            </h4 >
+            <button class="adicionarCarrinho button-hover-background"  >adicionar ao carrinho</button>
           </div>
         </div>
-        <div class="dsc-card">
-          <div class="dsc-catalogo-card-top dsc-line-bottom">
-            <img src="./doacao/img/Preta_2.png" alt="Computer" />
+        <div class="impacto-card">
+          <div class="impacto-catalogo-card-top impacto-line-bottom">
+            <img src="./doacao/img/Caneca_azul.png" alt="Caneca" class="produto-image" />
           </div>
-          <div class="dsc-catalogo-card-bottom">
-            <h3>R$ 100,00</h3>
-            <h4>
-              Camisa Preta
-            </h4>
-            <button class="adicionarCarrinho" onclick="" ><h5>adicionar ao carrinho</h5></button>
+          <div class="impacto-catalogo-card-bottom">
+            <span class="produto-price"><h3>R$ 50,00</h3></span>
+            <h4 class="produto-title" >
+              Caneca Azul
+            </h4 >
+            <button class="adicionarCarrinho button-hover-background"  >adicionar ao carrinho</button>
           </div>
         </div>
-        <div class="dsc-card">
-          <div class="dsc-catalogo-card-top dsc-line-bottom">
-            <img src="./doacao/img/Preta_4.png" alt="Computer" />
+        <div class="impacto-card">
+          <div class="impacto-catalogo-card-top impacto-line-bottom">
+            <img src="./doacao/img/Caneca_laranja.png" alt="Caneca" class="produto-image" />
           </div>
-          <div class="dsc-catalogo-card-bottom">
-            <h3>R$ 50,00</h3>
-            <h4>
-              Camisa Preta
-            </h4>
-            <button class="adicionarCarrinho" onclick="" ><h5>adicionar ao carrinho</h5></button>
+          <div class="impacto-catalogo-card-bottom">
+            <span class="produto-price"><h3>R$ 50,00</h3></span>
+            <h4 class="produto-title" >
+              Caneca Laranja
+            </h4 >
+            <button class="adicionarCarrinho button-hover-background"  >adicionar ao carrinho</button>
+          </div>
+        </div>
+        <div class="impacto-card">
+          <div class="impacto-catalogo-card-top impacto-line-bottom">
+            <img src="./doacao/img/Caneca_verde.png" alt="Caneca" class="produto-image" />
+          </div>
+          <div class="impacto-catalogo-card-bottom">
+            <span class="produto-price"><h3>R$ 50,00</h3></span>
+            <h4 class="produto-title" >
+              Caneca Verde
+            </h4 >
+            <button class="adicionarCarrinho button-hover-background"  >adicionar ao carrinho</button>
+          </div>
+        </div>
+        <div class="impacto-card">
+          <div class="impacto-catalogo-card-top impacto-line-bottom">
+            <img src="./doacao/img/Caneca_azul.png" alt="Caneca" class="produto-image" />
+          </div>
+          <div class="impacto-catalogo-card-bottom">
+            <span class="produto-price"><h3>R$ 50,00</h3></span>
+            <h4 class="produto-title" >
+              Caneca Azul
+            </h4 >
+            <button class="adicionarCarrinho button-hover-background"  >adicionar ao carrinho</button>
+          </div>
+        </div>
+        <div class="impacto-card">
+          <div class="impacto-catalogo-card-top impacto-line-bottom">
+            <img src="./doacao/img/Caneca_laranja.png" alt="Caneca" class="produto-image" />
+          </div>
+          <div class="impacto-catalogo-card-bottom">
+            <span class="produto-price"><h3>R$ 50,00</h3></span>
+            <h4 class="produto-title" >
+              Caneca Laranja
+            </h4 >
+            <button class="adicionarCarrinho button-hover-background"  >adicionar ao carrinho</button>
+          </div>
+        </div>
+        <div class="impacto-card">
+          <div class="impacto-catalogo-card-top impacto-line-bottom">
+            <img src="./doacao/img/Caneca_verde.png" alt="Caneca" class="produto-image" />
+          </div>
+          <div class="impacto-catalogo-card-bottom">
+            <span class="produto-price"><h3>R$ 50,00</h3></span>
+            <h4 class="produto-title" >
+              Caneca Verde
+            </h4 >
+            <button class="adicionarCarrinho button-hover-background"  >adicionar ao carrinho</button>
+          </div>
+        </div>
+        <div class="impacto-card">
+          <div class="impacto-catalogo-card-top impacto-line-bottom">
+            <img src="./doacao/img/Caneca_azul.png" alt="Caneca" class="produto-image" />
+          </div>
+          <div class="impacto-catalogo-card-bottom">
+            <span class="produto-price"><h3>R$ 50,00</h3></span>
+            <h4 class="produto-title" >
+              Caneca Azul
+            </h4 >
+            <button class="adicionarCarrinho button-hover-background"  >adicionar ao carrinho</button>
+          </div>
+        </div>
+        <div class="impacto-card">
+          <div class="impacto-catalogo-card-top impacto-line-bottom">
+            <img src="./doacao/img/Caneca_laranja.png" alt="Caneca" class="produto-image" />
+          </div>
+          <div class="impacto-catalogo-card-bottom">
+            <span class="produto-price"><h3>R$ 50,00</h3></span>
+            <h4 class="produto-title" >
+              Caneca Laranja
+            </h4 >
+            <button class="adicionarCarrinho button-hover-background"  >adicionar ao carrinho</button>
+          </div>
+        </div>
+        <div class="impacto-card">
+          <div class="impacto-catalogo-card-top impacto-line-bottom">
+            <img src="./doacao/img/Caneca_verde.png" alt="Caneca" class="produto-image" />
+          </div>
+          <div class="impacto-catalogo-card-bottom">
+            <span class="produto-price"><h3>R$ 50,00</h3></span>
+            <h4 class="produto-title" >
+              Caneca Verde
+            </h4 >
+            <button class="adicionarCarrinho button-hover-background"  >adicionar ao carrinho</button>
           </div>
         </div>
       </div>
+    </section>
+    <section class="containerCarrinho">
+      <h2 class="section-title">Carrinho</h2>
+
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th class="tabela-head-item ">Item</th>
+            <th class="tabela-head-item ">Preço</th>
+            <th class="tabela-head-item ">Quantidade</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3" class="cart-total-container">
+              <strong>Total</strong>
+              <span>R$0,00</span>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <button type="button" class="botaoComprar removerCarrinho">Finalizar Compra</button>
     </section>
   </main>
   <script src="/js/script.js"></script>
