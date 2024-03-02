@@ -55,11 +55,7 @@
   </header>
   <main >
     <section id="catalogo-section" class="impacto-container">
-      <form class="impacto-search-bar">
-        <button type="submit">🔎︎</button>
-        <input type="text" placeholder="Nome do produto" />
-        <button type="reset">🗙</button>
-      </form>
+      
       <label class="labelCategoria" for="categorias"><p>Categorias</p></label>
       <select onchange="escolher()" name="categorias" class="categoria">
         <option value="0">Todos</option>
@@ -67,12 +63,16 @@
         <option value="2">Caneca_azul</option>
         <option value="3">Caneca_laranja</option>
         <option value="4">Caneca_verde</option>
-       
-        
-
-
-
-      </select>
+      </select> 
+      <button onclick="agradecimento()" id="modalId" type="button"> Agradecimento</button>
+      <dialog disabled>
+        <p>Muito Obrigado por esta em nosso Site, para Aprender mais
+          acesse o video abaixo e veja mais sobre nosso tema de aquecimento clima=ático
+        </p><br>
+        <iframe width="400" height="200" src="https://www.youtube.com/embed/U_4EB9TFJME" title="LinguagemC- 05-11-2023 [Cadastro Pessoal Com autenticacao de Login  carregado em memoria ao iniciar)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <br><br>  
+        <button onclick="fechar()" id="modalIdFecha" type="button"> Fechar</button>
+      </dialog>
       <div class="impacto-catalogo-cards">
         <div class="impacto-card" id="camisa_preta1">
           <div class="impacto-catalogo-card-top impacto-line-bottom">
