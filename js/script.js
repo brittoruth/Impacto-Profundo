@@ -3,7 +3,7 @@
 
 setTimeout(() =>{
   document.getElementById("modalId").style.display="inherit";
-}, 1000);
+}, 5000);
 
 function escolher(){
   const select = document.querySelector(".categoria");
@@ -11,110 +11,35 @@ function escolher(){
   let valor = selectOption.value;
   console.log(valor);
     if(valor ==0){
-      document.getElementById("camisa_preta1").style.display = "inherit";
-      document.getElementById("camisa_preta2").style.display = "inherit";
-      document.getElementById("camisa_preta3").style.display = "inherit";
-      document.getElementById("camisa_preta4").style.display = "inherit";
-      document.getElementById("camisa_preta5").style.display = "inherit";
-      document.getElementById("caneca_azul1").style.display="inherit";
-      document.getElementById("caneca_azul2").style.display="inherit";
-      document.getElementById("caneca_azul3").style.display="inherit";
-      document.getElementById("caneca_azul4").style.display="inherit";
-      document.getElementById("caneca_azul5").style.display="inherit";
-      document.getElementById("caneca_laranja1").style.display="inherit";
-      document.getElementById("caneca_laranja2").style.display="inherit";
-      document.getElementById("caneca_laranja3").style.display="inherit";
-      document.getElementById("caneca_laranja4").style.display="inherit";
-      document.getElementById("caneca_laranja5").style.display="inherit";
-      document.getElementById("caneca_verde1").style.display="inherit";
-      document.getElementById("caneca_verde2").style.display="inherit";
-      document.getElementById("caneca_verde3").style.display="inherit";
-      document.getElementById("caneca_verde4").style.display="inherit";
-      document.getElementById("caneca_verde5").style.display="inherit";
+      mostrarCamisa();
+      mostrarCanecaAzul();
+      mostrarCanecaLaranja();
+      mostrarCanecaVerde();
     }
     else if( valor == 1){
-      document.getElementById("camisa_preta1").style.display = "inherit";
-      document.getElementById("camisa_preta2").style.display = "inherit";
-      document.getElementById("camisa_preta3").style.display = "inherit";
-      document.getElementById("camisa_preta4").style.display = "inherit";
-      document.getElementById("camisa_preta5").style.display = "inherit";
-      document.getElementById("caneca_azul1").style.display="none";
-      document.getElementById("caneca_azul2").style.display="none";
-      document.getElementById("caneca_azul3").style.display="none";
-      document.getElementById("caneca_azul4").style.display="none";
-      document.getElementById("caneca_azul5").style.display="none";
-      document.getElementById("caneca_laranja1").style.display="none";
-      document.getElementById("caneca_laranja2").style.display="none";
-      document.getElementById("caneca_laranja3").style.display="none";
-      document.getElementById("caneca_laranja4").style.display="none";
-      document.getElementById("caneca_laranja5").style.display="none";
-      document.getElementById("caneca_verde1").style.display="none";
-      document.getElementById("caneca_verde2").style.display="none";
-      document.getElementById("caneca_verde3").style.display="none";
-      document.getElementById("caneca_verde4").style.display="none";
-      document.getElementById("caneca_verde5").style.display="none";
+      mostrarCamisa();
+      esconderCanecaAzul();
+      esconderCanecaLaranja();
+      esconderCanecaVerde();
+      
     }
     else if (valor == 2){
-      document.getElementById("camisa_preta1").style.display = "none";
-      document.getElementById("camisa_preta2").style.display = "none";
-      document.getElementById("camisa_preta3").style.display = "none";
-      document.getElementById("camisa_preta4").style.display = "none";
-      document.getElementById("camisa_preta5").style.display = "none";
-      document.getElementById("caneca_azul1").style.display="inherit";
-      document.getElementById("caneca_azul2").style.display="inherit";
-      document.getElementById("caneca_azul3").style.display="inherit";
-      document.getElementById("caneca_azul4").style.display="inherit";
-      document.getElementById("caneca_azul5").style.display="inherit";
-      document.getElementById("caneca_laranja1").style.display="none";
-      document.getElementById("caneca_laranja2").style.display="none";
-      document.getElementById("caneca_laranja3").style.display="none";
-      document.getElementById("caneca_laranja4").style.display="none";
-      document.getElementById("caneca_laranja5").style.display="none"
-      document.getElementById("caneca_verde1").style.display="none";
-      document.getElementById("caneca_verde2").style.display="none";
-      document.getElementById("caneca_verde3").style.display="none";
-      document.getElementById("caneca_verde4").style.display="none";
-      document.getElementById("caneca_verde5").style.display="none";
+      esconderCamisa();
+      mostrarCanecaAzul();
+      esconderCanecaLaranja();
+      esconderCanecaVerde();
     }
     else if(valor == 3){
-      document.getElementById("camisa_preta1").style.display = "none";
-      document.getElementById("camisa_preta2").style.display = "none";
-      document.getElementById("camisa_preta3").style.display = "none";
-      document.getElementById("camisa_preta4").style.display = "none";
-      document.getElementById("camisa_preta5").style.display = "none";
-      document.getElementById("caneca_azul1").style.display="none";
-      document.getElementById("caneca_azul2").style.display="none";
-      document.getElementById("caneca_azul3").style.display="none";
-      document.getElementById("caneca_azul4").style.display="none";
-      document.getElementById("caneca_azul5").style.display="none";
-      document.getElementById("caneca_laranja1").style.display="inherit";
-      document.getElementById("caneca_laranja2").style.display="inherit";
-      document.getElementById("caneca_laranja3").style.display="inherit";
-      document.getElementById("caneca_laranja4").style.display="inherit";
-      document.getElementById("caneca_laranja5").style.display="inherit";
-      document.getElementById("caneca_verde1").style.display="none";
-      document.getElementById("caneca_verde2").style.display="none";
-      document.getElementById("caneca_verde3").style.display="none";
-      document.getElementById("caneca_verde4").style.display="none";
-      document.getElementById("caneca_verde5").style.display="none";
+      esconderCamisa();
+      esconderCanecaAzul();
+      mostrarCanecaLaranja();
+      esconderCanecaVerde();
     }
     else if(valor == 4){
-      document.getElementById("camisa_preta1").style.display = "none";
-      document.getElementById("caneca_azul1").style.display="none";
-      document.getElementById("caneca_azul2").style.display="none";
-      document.getElementById("caneca_azul3").style.display="none";
-      document.getElementById("caneca_azul4").style.display="none";
-      document.getElementById("caneca_azul5").style.display="none";
-      document.getElementById("caneca_laranja1").style.display="none";
-      document.getElementById("caneca_laranja2").style.display="none";
-      document.getElementById("caneca_laranja3").style.display="none";
-      document.getElementById("caneca_laranja4").style.display="none";
-      document.getElementById("caneca_laranja5").style.display="none";
-      document.getElementById("caneca_verde1").style.display="inherit";
-      document.getElementById("caneca_verde2").style.display="inherit";
-      document.getElementById("caneca_verde3").style.display="inherit";
-      document.getElementById("caneca_verde4").style.display="inherit";
-      document.getElementById("caneca_verde5").style.display="inherit";
+      esconderCamisa();
+      esconderCanecaAzul();
+      esconderCanecaLaranja();
+      mostrarCanecaVerde();
     }
 }
 
@@ -253,3 +178,62 @@ function menuShow() {
     document.querySelector(".cart-total-container span").innerText = "R$" + total;
   }
   
+
+
+
+function esconderCamisa(){
+    document.getElementById("camisa_preta1").style.display = "none";
+      document.getElementById("camisa_preta2").style.display = "none";
+      document.getElementById("camisa_preta3").style.display = "none";
+      document.getElementById("camisa_preta4").style.display = "none";
+      document.getElementById("camisa_preta5").style.display = "none";
+}
+function mostrarCamisa(){
+    document.getElementById("camisa_preta1").style.display = "inherit";
+      document.getElementById("camisa_preta2").style.display = "inherit";
+      document.getElementById("camisa_preta3").style.display = "inherit";
+      document.getElementById("camisa_preta4").style.display = "inherit";
+      document.getElementById("camisa_preta5").style.display = "inherit";
+}
+function esconderCanecaAzul(){
+    document.getElementById("caneca_azul1").style.display="none";
+      document.getElementById("caneca_azul2").style.display="none";
+      document.getElementById("caneca_azul3").style.display="none";
+      document.getElementById("caneca_azul4").style.display="none";
+      document.getElementById("caneca_azul5").style.display="none";
+}
+function mostrarCanecaAzul(){
+    document.getElementById("caneca_azul1").style.display="inherit";
+      document.getElementById("caneca_azul2").style.display="inherit";
+      document.getElementById("caneca_azul3").style.display="inherit";
+      document.getElementById("caneca_azul4").style.display="inherit";
+      document.getElementById("caneca_azul5").style.display="inherit";
+}
+function esconderCanecaLaranja(){
+    document.getElementById("caneca_laranja1").style.display="none";
+    document.getElementById("caneca_laranja2").style.display="none";
+    document.getElementById("caneca_laranja3").style.display="none";
+    document.getElementById("caneca_laranja4").style.display="none";
+    document.getElementById("caneca_laranja5").style.display="none";
+}
+function mostrarCanecaLaranja(){
+    document.getElementById("caneca_laranja1").style.display="inherit";
+    document.getElementById("caneca_laranja2").style.display="inherit";
+    document.getElementById("caneca_laranja3").style.display="inherit";
+    document.getElementById("caneca_laranja4").style.display="inherit";
+    document.getElementById("caneca_laranja5").style.display="inherit";
+}
+function esconderCanecaVerde(){
+    document.getElementById("caneca_verde1").style.display="none";
+      document.getElementById("caneca_verde2").style.display="none";
+      document.getElementById("caneca_verde3").style.display="none";
+      document.getElementById("caneca_verde4").style.display="none";
+      document.getElementById("caneca_verde5").style.display="none";
+}
+function mostrarCanecaVerde(){
+    document.getElementById("caneca_verde1").style.display="inherit";
+      document.getElementById("caneca_verde2").style.display="inherit";
+      document.getElementById("caneca_verde3").style.display="inherit";
+      document.getElementById("caneca_verde4").style.display="inherit";
+      document.getElementById("caneca_verde5").style.display="inherit";
+}
