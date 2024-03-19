@@ -20,14 +20,16 @@
   --impacto-color-error: #f33;
 }
 .categoria{
-  height: 34px;
+  height: 50px;
   width: 200px;
   font-size: 16px;
-  
+  margin-top: 2%;
+
 }
+
 .labelCategoria p{
   font-size: 25px;
-  
+  padding-bottom: 5px;
 }
 #catalogo-section {
   padding: 20px 0;
@@ -120,7 +122,7 @@
 
 .tabela-head-item {
   text-align: start;
-  border-bottom: 1px solid var(--impacto-color-bg-tertiary);
+  border-bottom: 5px solid var(--impacto-color-bg-tertiary);
   padding-bottom: 6px;
   text-transform: uppercase;
 }
@@ -200,7 +202,6 @@
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
-
   transition: filter 0.2s;
 }
 #modalId , #modalIdFecha{
@@ -209,14 +210,16 @@
   background: var(--impacto-color-btn-primary);
   color: var(--white);
   border: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border-radius: 6px;
   padding: 16px 20px;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
-
   transition: filter 0.2s;
+}
+#modalIdFecha{
+  margin-bottom: 100px;
 }
 dialog::backdrop{
   background-color: rgba(5, 9, 226, 0.4);
@@ -230,9 +233,10 @@ dialog{
   width: 40%;
   margin-left: 20%;
   margin-top: 10%;
-  height: 50%;
+  height: 46%;
   border-radius: 20px;
-  background-image: url("/doacao/img/doe.png");
+  background-image: url("../img/doacao/doe.png");
+  background-size: 100vh;
 }
 dialog p {
   font-size: 2rem;
