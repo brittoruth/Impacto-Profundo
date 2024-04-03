@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacto Profundo</title>
+    <link rel="stylesheet" href="./assets/css/global/style.css">
+    <link rel="stylesheet" href="./assets/css/global/global.css">
+    <link rel="stylesheet" href="./assets/css/global/reset.css">
+    <link rel="shortcut icon" href="./assets/image/global/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./assets/css/global/doacao.css" />
+    <link rel="stylesheet" href="./assets/css/global/form.css">
+    <link rel="stylesheet" href="./assets/css/global/footer.css">
+
+    <link rel="stylesheet" href="./assets/css/global/responsividade-contato-footer.css">
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dongle&family=Geostar&family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /*------------------ CONFIGURAÃ‡ÃƒO --------------------------------*/
+
+
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+        * {
+            box-sizing: border-box;
+            /*    font-family: "Poppins", sans-serif;*/
+        }
+
+        /* acessibilidade fonte*/
+        :root {
+
+            /* acessibilidade  font-size:100%  equivale 16px equivalente a fonte padrao dos navegadore qual a porcentagem de 10 px %*/
+            font-size: 62.5%
+        }
+
+        body {
+            font-size: 1.6rem;
+            /* font-size:62.5% equivalente a 100*10px por 16px*/
+            box-sizing: border-box
+        }
+    </style>
+
+    <!-- Saude-->
+    <style>
+        /* saude*/
+        logo-autores {
+            position: absolute;
+            width: 120px;
+            height: auto;
+            left: 159px;
+            top: 284px;
+
+            background: url(image.png);
+            border-radius: 100px;
+        }
+
+        .contribuidores ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 8px;
+        }
+
+        .contribuidores li {
+            padding: 5px;
+            margin-bottom: 7px;
+
+        }
+
+        .header-saude {
+            margin: 10px 0 10px 0;
+            left: 100%;
+
+
+        }
+
+        .header-saude .col-6 h1>h6 {
+
+            padding-top: 60px;
+        }
+
+
+        .foto-autores {
+            position: absolute;
+            width: 57px;
+            height: 55px;
+            left: 159px;
+            top: 284px;
+
+            background: url(image.png);
+            border-radius: 100px;
+        }
+    </style>
+
+    <!-- Depoimento-->
+    <style>
+        summary {
+            padding: 10px;
+            padding-left: 25px;
+            border-bottom: 1px solid black;
+            font-weight: bold;
+        }
+
+        summary:hover,
+        summary:focus {
+            color: blue;
+        }
+
+        .botao-contato {
+            align-items: center;
+            background-color: #FFFFFF;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: .25rem;
+            box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+            box-sizing: border-box;
+            color: rgba(0, 0, 0, 0.85);
+            cursor: pointer;
+            display: inline-flex;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            justify-content: center;
+            line-height: 1.25;
+            margin: 0;
+            min-height: 3rem;
+            padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+            position: relative;
+            text-decoration: none;
+            transition: all 250ms;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: baseline;
+            width: auto;
+        }
+
+        .botao-contato:hover,
+        .botao-contato:focus {
+            border-color: rgba(0, 0, 0, 0.15);
+            box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+            color: rgba(0, 0, 0, 0.65);
+        }
+
+        .botao-contato:hover {
+            transform: translateY(-1px);
+        }
+
+        .button-contato:active {
+            background-color: #F0F0F1;
+            border-color: rgba(0, 0, 0, 0.15);
+            box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+            color: rgba(0, 0, 0, 0.65);
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+            <div class="cabecalho">
+                <div class="cabecalho__menu__divisao">
+                    <img class="cabecalho__menu__divisao__imagem" src="./assets/image/global/header.png" alt="globo">
+                    <a href="./index.html" class="cabecalho__menu__divisao__logo"> <strong
+                            class="cabecalho__menu__divisao__impacto">Impacto</strong>
+                        <strong class="cabecalho__menu__divisao__profundo">Profundo</strong></a>
+                </div>
+
+
+
+                <div class="cabecalho__menu__selecoes">
+
+                    <div class="mobile-menu">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+
+
+                    <ul class="cabecalho__menu__selecoes__lista">
+                        <li><a class="cabecalho__menu__selecoes__lista__link" href="./assets/pages/sobre.html">Sobre</a>
+                        </li>
+                        <li><a class="cabecalho__menu__selecoes__lista__link" href="./assets/pages/saude.html">Saúde</a>
+                        </li>
+                        <li><a class="cabecalho__menu__selecoes__lista__link"
+                                href="./assets/pages/doacao.html">Doação</a>
+                        </li>
+                        <li><a class="cabecalho__menu__selecoes__lista__link"
+                                href="./assets/pages/contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="main-container">
+            <div class="content">
+                <div class="text-container">
+                    <h1 class="main-title">O impacto do<br>aquecimento global</h1>
+                    <p class="main-paragraph">Saiba como o aquecimento global afeta sua saúde<br>e descubra medidas de
+                        prevenção e adaptação.</p>
+                </div>
+                <a href="#" class="button">Saber mais</a>
+            </div>
+            <!-- <img src="./assets/image/index/planeta_fogo.png" alt="Planeta Fogo" class="background-image"> -->
+
+        </div>
+
+        <!-- SOBRE-->
+
+        <section id="sobre nos">
+            <section id="imagem">
+                <img src="caminho" alt="Sobre nos">
+            </section>
+
+            <section id="conteudo">
+
+                <h1>
+                    Sobre nós
+                </h1>
+
+                <p>
+                    Bem-vindo ao nosso site dedicado a orientar e apoiar a humanidade diante do aumento acelerado das
+                    temperaturas na Terra e da intensificação das condições climáticas. Nosso compromisso abrange
+                    diversas
+                    áreas essenciais, incluindo a identificação de riscos, orientações médicas, estratégias de prevenção
+                    e a
+                    análise do impacto nas diferentes esferas da vida humana.
+                </p>
+
+                <p>
+                    Entendemos que a urgência dessas questões demanda uma abordagem abrangente, e é por isso que nos
+                    dedicamos a atender a toda a humanidade como nosso público-alvo. Nosso objetivo é fornecer
+                    informações
+                    valiosas e práticas para ajudar as pessoas a enfrentarem os desafios impostos por mudanças
+                    climáticas
+                    significativas.
+                </p>
+
+                <p>
+                    Além disso, acreditamos na importância de agir de maneira sustentável em nosso cotidiano. Em
+                    sintonia
+                    com essa visão, oferecemos uma variedade de produtos sustentáveis que não apenas facilitam o dia a
+                    dia,
+                    mas também contribuem para a promoção de práticas ambientalmente conscientes. Ao adquirir esses
+                    produtos, você não apenas investe em soluções práticas, mas também apoia ativamente nossa causa.
+                </p>
+
+                <p>
+                    Junte-se a nós nesta jornada de conscientização, prevenção e sustentabilidade. Estamos comprometidos
+                    em
+                    fornecer recursos valiosos e práticos para ajudar cada indivíduo a desempenhar um papel ativo na
+                    construção de um futuro mais sustentável e resiliente.
+                </p>
+            </section>
+
+            <section id="rodape centralizado">
+
+                <h2>Parceiros que apoiam nossa organização e a saúde Mundial</h2>
+
+                <img src="assets/image/" alt="HAYAT">
+                <img src="/img/proz.png" alt="Proz Tecnologia">
+                <img src="/img/Talento cloud.png" alt="Talento Cloud">
+                <img src="/img/aws.png" alt="Powered by AWS">
+
+            </section>
+
+
+            <section id="conteudo_2">
+
+                <H1> Nossa Equipe </H1>
+                <p2> Conheça as pessoas por trás da Organização </p2>
+
+                <img src="" alt="Alex Costa">
+                <img src="" alt="Ana Paula Sena">
+                <img src="" alt="Daniel Monteiro">
+                <img src="" alt="Ruth Britto">
+                <img src="" alt="Sara Nascimento">
+                <img src="" alt="Tiago Freitas">
+
+            </section>
+
+
+            <input type="radio" name="text1" id="Sobre nós">
+            <input type="radio" name="text2" id="Equipe">
+
+        </section>
+
+
+        <!-- SAÚDE-->
+
+        <sectiom class="col-12 saude">
+            <div class="row linha-saude">
+
+                <article>
+                    <!-- Mapas 1 -->
+                    <div class="row">
+
+                        <div class="col-12 post"> <!-- Coluna 1 | Mapa -->
+
+                            <div class="row">
+
+                                <div class="col-12 "> <!-- Coluna 1 | Mapa -->
+
+                                    <header class="header-saude">
+                                        <h6>Artigo | Categoria | Saúde
+                                            Feminina
+                                        </h6>
+                                        <div class="col-6">
+                                            <h1 style="margin-left:10px;"><strong>Saúde Feminina</strong> </h1>
+                                            <h6 style="margin-top:20px;">Precauções e cuidados para a Saúde </h6>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="col-6 logo-autores">
+                                                <img src="./assets/image/saude/logoParceiroEspecialista1.png"
+                                                    width="60px" border-radius="100px" alt="logo parceiro 1">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="col-2 logo-autores">
+                                                <img src="./assets/image/saude/Dr. Katia Marroquim Ginecologista.png"
+                                                    width="60px" alt="Especialista1">
+                                            </div>
+                                            <div class="col-8 logo-autores">
+                                                <strong> <br>
+                                                    <p> Dra. Kátia Marroquim - Ginecologista</p>
+                                                </strong>
+                                                <p>21 Fev 2024, 5 min leitura</p>
+                                            </div>
+                                        </div>
+                                </div>
+                                </header>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="row">
+
+                            <section style="height: 25%;">
+                                <p style="text-align: center;">Só o tratamento hormonal Bioidêntico, consegue
+                                    regularizar a mudanda da temperatura interna.
+
+                            </section>
+
+                            <div class="row">
+
+                            </div>
+
+                            <div class="col-4 contribuidores">
+                                <h3>Contribuidores</h3>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="./assets/image/saude/Dr. Katia Marroquim Ginecologista.png"
+                                            width="60px" alt="Especialista1" width="50" height="50">
+                                    </div>
+                                    <div class="col-5"><br>
+                                        <p> Dra. Kátia Marroquim - Ginecologista</p>
+                                    </div>
+                                </div>
+                                <!-- <div class="row">
+                                    <div class="col-2">
+                                        <img src="./assets/image/saude/Dr. Katia Marroquim Ginecologista.png" width="60px"
+                                            alt="Especialista1" width="50" height="50">
+                                    </div>
+                                  <div class="col-5"><br>
+                                        <p>Dr. Daniel Rocha - Médico, Hospital das Clínicas</p>
+                                    </div>
+                                </div>-->
+                            </div>
+                            <div class="col-6">
+
+
+                                <h2>Introdução</h2> <br>
+                                <p> A emergência climática afeta mais as mulheresos, efeitos das mudanças
+                                    climáticas são sentidos de maneira diferente entre homens e mulheres.
+                                    As condições preexistentes de desigualdade de gênero colocam mulheres e meninas em
+                                    uma
+                                    posição
+                                    de
+                                    maior
+                                    vulnerabilidade perante os fenômenos associados ao aumento das temperaturas da
+                                    Terra.
+                                    Algunas
+                                    cenários:
+                                    O calor provoca irritabilidade e nervosismo o que recai sobre o feto, quando se tem
+                                    uma
+                                    queda de
+                                    presão
+                                    diminui o aporte de oxigênio ao feto, comprometendo a sua oxigenação;
+                                    Em alta temperatura duranate a gravidez pode haver alteração da pressão e a paciente
+                                    tem
+                                    a
+                                    sensação
+                                    de
+                                    desmaio;
+                                    Fadiga e queda de energia.</p>
+                                <p> 68% da população feminina na pré-menopausa e pós-menopausa que é o aumento da
+                                    temperatura
+                                    internana,
+                                    fogachos, que provoca instabilidade emocional e um mal estar.</p>
+                                <div><br>
+                                    <h2> Aumento da Temperatura</h2>
+                                    <div>
+                                        <div style="position: relative; width: 95%; height: 0; padding-top: 56.2225%;
+                                                padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; 
+                                                border-radius: 8px; will-change: transform;">
+                                            <iframe loading="lazy"
+                                                style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                                src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGAiYRl6kw&#x2F;BlRMACK-hIKLKGYQ_CrhcQ&#x2F;view?embed"
+                                                allowfullscreen="allowfullscreen" allow="fullscreen">
+                                            </iframe>
+                                        </div>
+                                        <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGAiYRl6kw&#x2F;BlRMACK-hIKLKGYQ_CrhcQ&#x2F;view?utm_content=DAGAiYRl6kw&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+                                            target="_blank" rel="noopener" alt="Calor intenso"></a>
+
+                                        <p>A imagem mostra o aumento da temperatura global ao longo dos anos.</p> <br>
+                                    </div>
+
+                                    <p>
+                                        68% da população feminina na pré-menopausa e pós-menopausa que é o aumento da
+                                        temperatura
+                                        internana,
+                                        fogachos, que provoca instabilidade emocional e um mal estar.
+
+                                    </p>
+
+                                    <p> Orientação primária:
+                                        Entrar no chuveiro gelado,
+                                        Ambiente fresco,
+                                        Sombra,
+                                        Roupa leve.
+                                        Neste caso procurar orientação médica para dosagem homonal
+                                    </p><br>
+
+
+                                    <div>
+                                        <h2>Impactos do Aquecimento Global na Saúde</h2> <br>
+                                        <p>O aquecimento global pode causar diversos impactos negativos na saúde humana,
+                                            como:
+                                        </p>
+                                        <ul>
+                                            <li>Doenças transmitidas por vetores (mosquitos, carrapatos, etc.)</li>
+                                            <li>Desidratação e desnutrição</li>
+                                            <li>Problemas respiratórios e alérgicos</li>
+                                            <li>Aumento de doenças cardiovasculares e cerebrovasculares</li>
+                                            <li>Mortes relacionadas ao calor</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2>Precauções e Cuidados</h2> <br>
+                                        <p>Para se proteger dos efeitos do aquecimento global, é importante:</p>
+                                        <ul>
+                                            <li>Manter-se hidratado</li>
+                                            <li>Procurar áreas sombreadas e frescas</li>
+                                            <li>Usar roupas leves e de cores claras</li>
+                                            <li>Evitar exercícios físicos intensos durante as horas mais quentes do dia
+                                            </li>
+                                            <li>Ficar atento aos avisos de calor extremo e seguir as orientações das
+                                                autoridades
+                                                locais</li>
+                                        </ul>
+                                    </div>
+                </article>
+
+
+
+        </sectiom>
+
+
+        <!-- Loja -->
+        <div class="col-12">
+            <section id="catalogo-section" class="impacto-container">
+
+                <label class="labelCategoria" for="categorias">
+                    <p>Categorias</p>
+                </label>
+
+                <select onchange="escolher()" name="categorias" class="categoria">
+                    <option value="0">Todos</option>
+                    <option value="1">Camisa</option>
+                    <option value="2">Caneca_azul</option>
+                    <option value="3">Caneca_laranja</option>
+                    <option value="4">Caneca_verde</option>
+                </select>
+                <button onclick="agradecimento()" id="modalId" type="button"> Agradecimento</button>
+
+                <dialog disabled>
+                    <p>Muito Obrigado por esta em nosso Site, para Aprender mais
+                        acesse o video abaixo e veja mais sobre nosso tema de aquecimento clima=ático
+                    </p><br>
+                    <iframe width="400" height="200" src="https://www.youtube.com/embed/U_4EB9TFJME"
+                        title="LinguagemC- 05-11-2023 [Cadastro Pessoal Com autenticacao de Login  carregado em memoria ao iniciar)"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <br><br>
+                    <button onclick="fechar()" id="modalIdFecha" type="button"> Fechar</button>
+                </dialog>
+
+                <div class="impacto-catalogo-cards">
+                    <div class="impacto-card" id="camisa_preta1">
+                        <div class="impacto-catalogo-card-top impacto-line-bottom">
+                            <img src="./assets/image/doacao/Camisa_branca.png" alt="Camisa Preta"
+                                class="produto-image" />
+                        </div>
+                        <div class="impacto-catalogo-card-bottom">
+                            <span class="produto-price">
+                                <h3>R$ 50,00</h3>
+                            </span>
+                            <h4 class="produto-title">
+                                Camisa Preta Branca
+                            </h4>
+                            <button class="adicionarCarrinho button-hover-background">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="impacto-card" id="caneca_azul1">
+                        <div class="impacto-catalogo-card-top impacto-line-bottom">
+                            <img src="./assets/image/doacao/Caneca_azul.png" alt="Caneca" class="produto-image" />
+                        </div>
+                        <div class="impacto-catalogo-card-bottom">
+                            <span class="produto-price">
+                                <h3>R$ 50,00</h3>
+                            </span>
+                            <h4 class="produto-title">
+                                Caneca Azul
+                            </h4>
+                            <button class="adicionarCarrinho button-hover-background">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="impacto-card" id="caneca_laranja1">
+                        <div class="impacto-catalogo-card-top impacto-line-bottom">
+                            <img src="./assets/image/doacao/Caneca_laranja.png" alt="Caneca" h class="produto-image" />
+                        </div>
+                        <div class="impacto-catalogo-card-bottom">
+                            <span class="produto-price">
+                                <h3>R$ 50,00</h3>
+                            </span>
+                            <h4 class="produto-title">
+                                Caneca Laranja
+                            </h4>
+                            <button class="adicionarCarrinho button-hover-background">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="impacto-card" id="caneca_verde1">
+                        <div class="impacto-catalogo-card-top impacto-line-bottom">
+                            <img src="./assets/image/doacao/Caneca_verde.png" alt="Caneca" class="produto-image" />
+                        </div>
+                        <div class="impacto-catalogo-card-bottom">
+                            <span class="produto-price">
+                                <h3>R$ 50,00</h3>
+                            </span>
+                            <h4 class="produto-title">
+                                Caneca Verde
+                            </h4>
+                            <button class="adicionarCarrinho button-hover-background">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="impacto-card" id="camisa_preta2">
+                        <div class="impacto-catalogo-card-top impacto-line-bottom">
+                            <img src="./assets/image/doacao/Camisa_branca.png" alt="Camisa Preta"
+                                class="produto-image" />
+                        </div>
+                        <div class="impacto-catalogo-card-bottom">
+                            <span class="produto-price">
+                                <h3>R$ 50,00</h3>
+                            </span>
+                            <h4 class="produto-title">
+                                Camisa Preta Branca
+                            </h4>
+                            <button class="adicionarCarrinho button-hover-background">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="impacto-card" id="caneca_azul2">
+                        <div class="impacto-catalogo-card-top impacto-line-bottom">
+                            <img src="./assets/image/doacao/Caneca_azul.png" alt="Caneca" class="produto-image" />
+                        </div>
+                        <div class="impacto-catalogo-card-bottom">
+                            <span class="produto-price">
+                                <h3>R$ 50,00</h3>
+                            </span>
+                            <h4 class="produto-title">
+                                Caneca Azul
+                            </h4>
+                            <button class="adicionarCarrinho button-hover-background">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="impacto-card" id="caneca_laranja2">
+                        <div class="impacto-catalogo-card-top impacto-line-bottom">
+                            <img src="./assets/image/doacao/Caneca_laranja.png" alt="Caneca" class="produto-image" />
+                        </div>
+                        <div class="impacto-catalogo-card-bottom">
+                            <span class="produto-price">
+                                <h3>R$ 50,00</h3>
+                            </span>
+                            <h4 class="produto-title">
+                                Caneca Laranja
+                            </h4>
+                            <button class="adicionarCarrinho button-hover-background">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="impacto-card" id="caneca_verde2">
+                        <div class="impacto-catalogo-card-top impacto-line-bottom">
+                            <img src="./assets/image/doacao/Caneca_verde.png" alt="Caneca" class="produto-image" />
+                        </div>
+                        <div class="impacto-catalogo-card-bottom">
+                            <span class="produto-price">
+                                <h3>R$ 50,00</h3>
+                            </span>
+                            <h4 class="produto-title">
+                                Caneca Verde
+                            </h4>
+                            <button class="adicionarCarrinho button-hover-background">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="impacto-card" id="camisa_preta3">
+                        <div class="impacto-catalogo-card-top impacto-line-bottom">
+                            <img src="./assets/image/doacao/Camisa_branca.png" alt="Camisa Preta"
+                                class="produto-image" />
+                        </div>
+                        <div class="impacto-catalogo-card-bottom">
+                            <span class="produto-price">
+                                <h3>R$ 50,00</h3>
+                            </span>
+                            <h4 class="produto-title">
+                                Camisa Preta Branca
+                            </h4>
+                            <button class="adicionarCarrinho button-hover-background">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="impacto-card" id="caneca_azul3">
+                        <div class="impacto-catalogo-card-top impacto-line-bottom">
+                            <img src="./assets/image/doacao/Caneca_azul.png" alt="Caneca" class="produto-image" />
+                        </div>
+                        <div class="impacto-catalogo-card-bottom">
+                            <span class="produto-price">
+                                <h3>R$ 50,00</h3>
+                            </span>
+                            <h4 class="produto-title">
+                                Caneca Azul
+                            </h4>
+                            <button class="adicionarCarrinho button-hover-background">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="impacto-card" id="caneca_laranja3">
+                        <div class="impacto-catalogo-card-top impacto-line-bottom">
+                            <img src="./assets/image/doacao/Caneca_laranja.png" alt="Caneca" class="produto-image" />
+                        </div>
+                        <div class="impacto-catalogo-card-bottom">
+                            <span class="produto-price">
+                                <h3>R$ 50,00</h3>
+                            </span>
+                            <h4 class="produto-title">
+                                Caneca Laranja
+                            </h4>
+                            <button class="adicionarCarrinho button-hover-background">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="impacto-card" id="caneca_verde3">
+                        <div class="impacto-catalogo-card-top impacto-line-bottom">
+                            <img src="./assets/image/doacao/Caneca_verde.png" alt="Caneca" class="produto-image" />
+                        </div>
+                        <div class="impacto-catalogo-card-bottom">
+                            <span class="produto-price">
+                                <h3>R$ 50,00</h3>
+                            </span>
+                            <h4 class="produto-title">
+                                Caneca Verde
+                            </h4>
+                            <button class="adicionarCarrinho button-hover-background">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="impacto-card" id="camisa_preta4">
+                        <div class="impacto-catalogo-card-top impacto-line-bottom">
+                            <img src="./assets/image/doacao/Camisa_branca.png" alt="Camisa Preta"
+                                class="produto-image" />
+                        </div>
+                        <div class="impacto-catalogo-card-bottom">
+                            <span class="produto-price">
+                                <h3>R$ 50,00</h3>
+                            </span>
+                            <h4 class="produto-title">
+                                Camisa Preta Branca
+                            </h4>
+                            <button class="adicionarCarrinho button-hover-background">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="impacto-card" id="caneca_azul4">
+                        <div class="impacto-catalogo-card-top impacto-line-bottom">
+                            <img src="./assets/image/doacao/Caneca_azul.png" alt="Caneca" class="produto-image" />
+                        </div>
+                        <div class="impacto-catalogo-card-bottom">
+                            <span class="produto-price">
+                                <h3>R$ 50,00</h3>
+                            </span>
+                            <h4 class="produto-title">
+                                Caneca Azul
+                            </h4>
+                            <button class="adicionarCarrinho button-hover-background">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="impacto-card" id="caneca_laranja4">
+                        <div class="impacto-catalogo-card-top impacto-line-bottom">
+                            <img src="./assets/image/doacao/Caneca_laranja.png" alt="Caneca" class="produto-image" />
+                        </div>
+                        <div class="impacto-catalogo-card-bottom">
+                            <span class="produto-price">
+                                <h3>R$ 50,00</h3>
+                            </span>
+                            <h4 class="produto-title">
+                                Caneca Laranja
+                            </h4>
+                            <button class="adicionarCarrinho button-hover-background">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="impacto-card" id="caneca_verde4">
+                        <div class="impacto-catalogo-card-top impacto-line-bottom">
+                            <img src="./assets/image/doacao/Caneca_verde.png" alt="Caneca" class="produto-image" />
+                        </div>
+                        <div class="impacto-catalogo-card-bottom">
+                            <span class="produto-price">
+                                <h3>R$ 50,00</h3>
+                            </span>
+                            <h4 class="produto-title">
+                                Caneca Verde
+                            </h4>
+                            <button class="adicionarCarrinho button-hover-background">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+
+                    <div class="impacto-card" id="camisa_preta5">
+                        <div class="impacto-catalogo-card-top impacto-line-bottom">
+                            <img src="./assets/image/doacao/Camisa_branca.png" alt="Camisa Preta"
+                                class="produto-image" />
+                        </div>
+                        <div class="impacto-catalogo-card-bottom">
+                            <span class="produto-price">
+                                <h3>R$ 50,00</h3>
+                            </span>
+                            <h4 class="produto-title">
+                                Camisa Preta Branca
+                            </h4>
+                            <button class="adicionarCarrinho button-hover-background">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="impacto-card" id="caneca_azul5">
+                        <div class="impacto-catalogo-card-top impacto-line-bottom">
+                            <img src="./assets/image/doacao/Caneca_azul.png" alt="Caneca" class="produto-image" />
+                        </div>
+                        <div class="impacto-catalogo-card-bottom">
+                            <span class="produto-price">
+                                <h3>R$ 50,00</h3>
+                            </span>
+                            <h4 class="produto-title">
+                                Caneca Azul
+                            </h4>
+                            <button class="adicionarCarrinho button-hover-background">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="impacto-card" id="caneca_laranja5">
+                        <div class="impacto-catalogo-card-top impacto-line-bottom">
+                            <img src="./assets/image/doacao/Caneca_laranja.png" alt="Caneca" class="produto-image" />
+                        </div>
+                        <div class="impacto-catalogo-card-bottom">
+                            <span class="produto-price">
+                                <h3>R$ 50,00</h3>
+                            </span>
+                            <h4 class="produto-title">
+                                Caneca Laranja
+                            </h4>
+                            <button class="adicionarCarrinho button-hover-background">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="impacto-card" id="caneca_verde5">
+                        <div class="impacto-catalogo-card-top impacto-line-bottom">
+                            <img src="./assets/image/doacao/Caneca_verde.png" alt="Caneca" class="produto-image" />
+                        </div>
+                        <div class="impacto-catalogo-card-bottom">
+                            <span class="produto-price">
+                                <h3>R$ 50,00</h3>
+                            </span>
+                            <h4 class="produto-title">
+                                Caneca Verde
+                            </h4>
+                            <button class="adicionarCarrinho button-hover-background">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="containerCarrinho">
+                <h2 class="section-title">Carrinho</h2>
+
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th class="tabela-head-item ">Item</th>
+                            <th class="tabela-head-item ">Preço</th>
+                            <th class="tabela-head-item ">Quantidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="cart-total-container">
+                                <strong>Total</strong>
+                                <span>R$0,00</span>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <button type="button" class="botaoComprar removerCarrinho">Finalizar Compra</button>
+
+            </section>
+        </div>
+        <!-- Formulario Contato -->
+
+        <section class="col-12 contato">
+
+            <!-- ======================= LINHA 1 (ROW)  Mapa1 e Formulario ========  -->
+            <div class="row linha-contato">
+
+                <!-- Mapas 1 -->
+                <div class="col-6 map1"> <!-- Coluna 1 | Mapa -->
+                    <header class="header-contato">
+                        <div class="col">
+                            <h6> Cadastro de Informações </h6>
+                            <h1><strong>Formulário</strong></h1>
+
+                        </div>
+                    </header>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14626.289401635664!2d-46.931951749999996!3d-23.583797899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1707947454515!5m2!1spt-BR!2sbr"
+                        style="border:0;" width="100%" height="500fr" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+                <!-- Formulario -->
+                <div class="col-6 form" style="background-color:rgb(255, 255, 255)"> <!-- Coluna 2 | Formulário -->
+                    <header class="header-contato">
+                        <div class="col">
+                            <h2 style="text-align: center; padding: 10px;">Cadastro de Informações de Risco Ambiental
+                            </h2>
+                        </div>
+                    </header>
+
+
+                    <div class="cadastroForm">
+
+                        <form id="cadastroForm" action="#" method="post">
+
+                            <div class="etapas">
+
+                                <div class="progress-bar">
+                                    <div class="step step-1" onclick="selecionarEtapa(1)"><span>1</span></div>
+                                    <div class="step step-2" onclick="selecionarEtapa(2)"><span>2</span></div>
+                                    <div class="step step-3" onclick="selecionarEtapa(3)"><span>3</span></div>
+                                    <div class="progress"></div>
+                                </div>
+
+                                <!-- Etapa 1: Informações Pessoais -->
+                                <div class="etapas-forms">
+
+                                    <div class="etapa-formulario etapa-1 etapa-atual">
+                                        <fieldset id="fieldset">
+                                            <legend>Dados para Cadastro</legend>
+                                            <div class="field">
+                                                <label for="nome">Nome:</label>
+                                                <input type="text" id="nome" name="nome" placeholder="Nome Completo"
+                                                    value="">
+                                            </div>
+                                            <div class="field">
+                                                <label for="email">Email:</label>
+                                                <input type="email" id="email" name="email" placeholder="Email"
+                                                    value="">
+                                            </div>
+                                            <div class="field-group">
+                                                <div class="field">
+                                                    <label for="data">Data:</label>
+                                                    <input type="date" id="data" name="data" value="" required>
+                                                </div>
+                                                <div class="field">
+                                                    <label for="hora">Hora:</label>
+                                                    <input type="time" id="hora" name="hora" value="" required>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label for="localizacao">Localização:</label>
+                                                <input type="text" id="localizacao" name="localizacao"
+                                                    placeholder="Rua: José dias, ou https://  " value="" required>
+                                                <!-- Google Maps -->
+                                            </div>
+                                            <div class="field">
+                                                <label for="risco">Nível de Risco:</label>
+                                                <select id="risco" name="risco" required>
+                                                    <option value="baixo">Baixo</option>
+                                                    <option value="médio" selected>Médio</option>
+                                                    <option value="alto">Alto</option>
+                                                </select>
+                                            </div>
+                                            <div class="row"> <!-- Linha 2-->
+
+                                                <div class="field-group ">
+                                                    <!-- Checkbox para aceite de políticas -->
+                                                    <div class="col">
+                                                        <input type="checkbox" id="aceitarPoliticas"
+                                                            name="aceitarPoliticas" value="aceitarPoliticas"> <label
+                                                            for="aceitarPoliticas"> Eu li e concordo com as políticas de
+                                                            privacidade
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <!-- criar scroll de politicas de opção selecionada style="display: true;"-->
+                                        <div class="row">
+                                            <div id="politicas" style="display: none;">
+                                                <h3>Políticas de Privacidade</h3>
+                                                <p>Estas são as nossas políticas de privacidade, em conformidade com a
+                                                    LGPD:
+                                                </p>
+                                                <ol>
+                                                    <li>Coletamos apenas informações necessárias para os fins
+                                                        especificados.
+                                                    </li>
+                                                    <li>As informações pessoais são tratadas de forma confidencial e
+                                                        segura.
+                                                    </li>
+                                                    <li>As informações não serão compartilhadas com terceiros sem
+                                                        consentimento.</li>
+                                                    <li>Os usuários têm o direito de acessar, corrigir e excluir seus
+                                                        dados
+                                                        pessoais.</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <br><br>
+
+                                        <button type="button" id="Next1"
+                                            onclick="proximoEtapa() ; selecionarEtapa(2)">Continuar</button>
+                                    </div>
+                                    <!-- Etapa 2: Detalhes Sobre Riscos Ambientais -->
+                                </div>
+                                <div class="etapas-forms">
+                                    <div class="etapa-formulario etapa-2">
+
+                                        <fieldset>
+                                            <legend>Detalhes Sobre Riscos Ambientais</legend>
+                                            <div class="field">
+                                                <label for="qtdPessoas">Quantidade de Pessoas Afetadas</label>
+                                                <input type="number" id="qtdPessoas" name="qtdPessoas" placeholder="0"
+                                                    value="" required>
+                                            </div>
+                                            <div class="field">
+                                                <label for="causas">Principais Causas:</label>
+                                                <select id="causas" name="causas" required>
+                                                    <optgroup label="Principais Causas">
+                                                        <option value="Selecionar"></option>
+                                                        <option value="calor-excessivo">Calor Excessivo</option>
+                                                        <option value="desmatamento">Desmatamento</option>
+                                                        <option value="poluicao">Poluição</option>
+                                                        <option value="alta-temperatura">Alta Temperatura</option>
+                                                        <option value="enchente">Enchente</option>
+                                                        <option value="vento-forte">Vento Forte</option>
+                                                        <option value="chuva-intensa">Chuva Intensa</option>
+                                                        <option value="granizo-de-chuva">Granizo de Chuva</option>
+                                                        <option value="alagamento">Alagamento</option>
+                                                        <option value="deslizamento-de-terra">Deslizamento de Terra
+                                                        </option>
+                                                        <option value="terremoto">Terremoto</option>
+                                                        <option value="tempestade">Tempestade</option>
+                                                        <option value="furacao">Furacão</option>
+                                                        <option value="incendio-florestal">Incêndio Florestal</option>
+                                                        <option value="poluicao-ar">Poluição do Ar</option>
+                                                        <option value="seca">Seca</option>
+                                                        <option value="tsunami">Tsunami</option>
+                                                        <option value="nevasca">Nevasca</option>
+                                                    </optgroup>
+                                                </select>
+                                            </div>
+                                            <div class="field">
+                                                <label for="outrasCausas">Outras Causas:</label>
+                                                <textarea id="outrasCausas" name="outrasCausas" rows="4"></textarea>
+                                            </div>
+                                            <div class="field">
+                                                <label for="sugestao">Elogios e Sugestão de Melhorias:</label>
+                                                <textarea id="sugestao" name="sugestao" rows="4"></textarea>
+                                            </div>
+                                        </fieldset>
+
+                                        <!--<button type="button" onclick="proximoEtapa() & exibirDados()">Continuar</button>-->
+                                        <button type="button" onclick="etapaAnterior()">Etapa Anterior</button>
+
+                                        <button type="button" id="Next1"
+                                            onclick="proximoEtapa() & exibirDados(); selecionarEtapa(3)">Continuar</button>
+
+                                    </div>
+                                </div>
+                                <!-- Etapa 3: Detalhes Ambientais -->
+                                <div class="etapas-forms">
+                                    <div class="etapa-formulario etapa-3">
+
+                                        <section>
+                                            <fieldset>
+
+                                                <div id="dados-cadastrado"></div>
+                                            </fieldset>
+                                        </section>
+                                        <button type="button" onclick="etapaAnterior()">Etapa Anterior</button>
+
+                                        <button type="submit" onclick="enviarFormulario(event)">Enviar</button>
+                                    </div>
+                                    <!--- <button onclick="exibirDados()">Confirmar</button> -->
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======================= LINHA 2 (ROW)  Mapa2 e Mapa3 ========  -->
+            <div class="row linha-mapas">
+
+                <!-- Mapas -->
+                <div class="col-12 mapas">
+
+                    <header class="header-contato">
+                        <div class="col">
+                            <h6>Prevenção</h6>
+                            <h1><strong>Localizações</strong></h1>
+                        </div>
+                    </header>
+
+                    <!-- Mapas 2-->
+                    <div class="col-6 map2"> <!-- Coluna 1 | Mapa 2 -->
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14626.289401635664!2d-46.931951749999996!3d-23.583797899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1707947454515!5m2!1spt-BR!2sbr"
+                            style="border:0;" width="100%" height="500fr" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+                        <div class="col-6">
+
+                            <div class="row"> <!-- Linha detalhes telefone e localização -->
+                                <header class="header-contato">
+                                    <h3><strong>São Paulo</strong></h3> <br>
+
+                                    <p>1698 Republica SP</p>
+                                    <ul>
+                                        <li style="display: flex; align-items: center;"> <img
+                                                src="./assets/image/footer/telefone_black.png" width="20px"
+                                                alt="logo_Impacto_Profundo" margin="10px"> &nbsp;(11) 1234-567</li>
+                                    </ul>
+                                </header>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mapas 3 -->
+                    <div class="col-6 map3"> <!-- Coluna 2 | Mapa 3 -->
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14626.289401635664!2d-46.931951749999996!3d-23.583797899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1707947454515!5m2!1spt-BR!2sbr"
+                            style="border:0;" width="100%" height="500fr" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="col-6">
+
+                            <div class="row"> <!-- Linha detalhes telefone e localização -->
+                                <header class="header-contato">
+                                    <h3><strong>São Paulo</strong></h3> <br>
+                                    <p>123 Avenida Paulista SP</p>
+                                    <ul>
+                                        <li style="display: flex; align-items: center;"> <img
+                                                src="./assets/image/footer/telefone_black.png" width="20px"
+                                                alt="logo_Impacto_Profundo" margin="10px"> &nbsp;(11) 1234-567</li>
+                                    </ul>
+                                </header>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Depoimentos -->
+
+        <section class="depoimentos">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Depoimentos</h1>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th align="left">★ ★ ★ ★ ★</th>
+                                <th align="left">★ ★ ★ ★ ★</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quas tempore
+                                        excepturi
+                                        accusantium natus omnis repudiandae, a corporis praesentium ab dolore veritatis
+                                        laboriosam non libero sed distinctio voluptate quam hic."</p>
+                                </td>
+                                <td>
+                                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quas tempore
+                                        excepturi
+                                        accusantium natus omnis repudiandae, a corporis praesentium ab dolore veritatis
+                                        laboriosam non libero sed distinctio voluptate quam hic."</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span><img src="./image/index/avatar.png" alt="Avatar" width="50"
+                                            height="50"><strong>&emsp;Fulano de Tal | Meta</strong></span></td>
+                                <td><span><img src="../image/index/avatar.png" alt="Avatar" width="50"
+                                            height="50"><strong>&emsp;Ciclano de Algo | Greenpeace</strong></span></td>
+                            </tr>
+                            <tr>
+                                <td>Analista de Infraestrutura</td>
+                                <td>Gerente de Operações</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <br>
+                    <br>
+                    <div>
+                        <h1>Perguntas Frequentes</h1>
+
+                        <p>Encontre respostas para as dúvidas mais comuns sobre aquecimento global, saúde e as
+                            atividades da
+                            nossa
+                            organização.</p>
+                        <details>
+                            <summary>O que é o aquecimento global?</summary>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum culpa, ipsum quaerat illo
+                            natus
+                            soluta, debitis rerum quas maxime error, impedit adipisci repellendus vitae ipsam nam
+                            dolorem
+                            aut ipsa
+                            inventore.
+                        </details>
+                        <details>
+                            <summary>Como o aquecimento global afeta a saúde?</summary>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum culpa, ipsum quaerat illo
+                            natus
+                            soluta, debitis rerum quas maxime error, impedit adipisci repellendus vitae ipsam nam
+                            dolorem
+                            aut ipsa
+                            inventore.
+                        </details>
+                        <details>
+                            <summary>O que podemos fazer para combater o aquecimento global?</summary>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum culpa, ipsum quaerat illo
+                            natus
+                            soluta, debitis rerum quas maxime error, impedit adipisci repellendus vitae ipsam nam
+                            dolorem
+                            aut ipsa
+                            inventore.
+                        </details>
+                        <details>
+                            <summary>Como posso ajudar a organização?</summary>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum culpa, ipsum quaerat illo
+                            natus
+                            soluta, debitis rerum quas maxime error, impedit adipisci repellendus vitae ipsam nam
+                            dolorem
+                            aut ipsa
+                            inventore.
+                        </details>
+                        <details>
+                            <summary>Como faço para entrar em contato?</summary>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum culpa, ipsum quaerat illo
+                            natus
+                            soluta, debitis rerum quas maxime error, impedit adipisci repellendus vitae ipsam nam
+                            dolorem
+                            aut ipsa
+                            inventore.
+                        </details>
+                        <h2>Ainda tem dúvidas?</h2>
+                        <p>Entre em contato para mais informações.</p>
+                        <button class="botao" type="button">Contato</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+    <!-- Footer-->
+    <footer>
+        <div class="footer">
+            <!-- Logo-->
+            <div class="row">
+
+                <div class="col-4 logo-nomelogo">
+                    <div class="col-2 logo">
+                        <a href=".index.html">
+                            <img src="./assets/image/footer/logo_Impacto_Profundo.png" width="60px"
+                                alt="logo_Impacto_Profundo"></a>
+                    </div>
+                    <!--Nome Logo-->
+                    <div class="col-9 nomelogo">
+                        <a href="./index.html" class="nomelogo"> <strong
+                                class="cabecalho__menu__divisao__impacto">Impacto</strong>
+                            <strong class="cabecalho__menu__divisao__profundo">Profundo</strong></a>
+                    </div>
+
+                    <!-- Contato Emaol -->
+                    <div class="row contato-email">
+
+                        <div class="col-9 ">
+                            <h5>Contato:
+                                (11) 1234-567 info@impactoprofundo.gmail.com</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sobre -->
+                <div class="col-4 sobre-footer">
+                    <h5>Sobre</h5>
+                    <p class="sobrefooter">Impacto Profundo <i>Bem-vindo ao nosso site dedicado a orientar e apoiar
+                            a humanidade diante do aumento acelerado das temperaturas na Terra e da intensificação das
+                            condições climáticas.</i></p>
+                </div>
+
+                <!-- Categoria -->
+                <div class="col-1 categoria right">
+                    <h5>Categoria</h5>
+                    <ul class="categoria">
+                        <li><a href="./pages/sobre.html">Sobre</a></li>
+                        <li><a href="./pages/saude.html">Saúde</a></li>
+                        <li><a href="./pages/doacao.html">Doação</a></li>
+                        <li><a href="./pages/contato.html">Contato</a></li>
+                        <li><a href="./pages/loja.html">Loja</a></li>
+                    </ul>
+                </div>
+
+                <!-- Parceiros -->
+                <div class="col-2 parceiros right">
+                    <h5>Parceiros</h5>
+                    <ul class="parceiros">
+                        <li><a href="#">Parceiro 1</a></li>
+                        <li><a href="#">Parceiro 2</a></li>
+                        <li><a href="#">Como contribuir</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Redes Sociais -->
+            <div class="row">
+                <div class="col-6 social">
+                    <ul class="social-icons">
+                        <li><a class="linkedin" href="#"><i><img src="./assets/image/footer/linkedin_black.png "
+                                        alt="Linkedin">
+                                </i></a>
+                        </li>
+                        <li><a class="youtube" href="#"><i><img src="./assets/image/footer/social_youtube.png"
+                                        alt="Youtube"></i></a>
+                        </li>
+                        <li><a class="insta" href="#"><i><img src="./assets/image/footer/instagram_black.png"
+                                        alt="Instagram">
+                                </i></a>
+                        </li>
+                        <li><a class="facebook" href="#"><i><img src="./assets/image/footer/face.png"
+                                        alt="Facebook"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- HR SVG copiado do figma-->
+            <div class="hr">
+                <svg width="1 fr" height="10" viewBox="0 0 1370 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1370" y="10" width="1370" height="6" transform="rotate(180 1370 10)"
+                        fill="url(#paint0_linear_272_279)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_272_279" x1="2740" y1="10" x2="1370" y2="10"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="0.0001" stop-color="#39ABE0" />
+                            <stop offset="0.27179" stop-color="#D89736" />
+                            <stop offset="0.45679" stop-color="#DBA472" />
+                            <stop offset="0.56" stop-color="#B1C4B7" />
+                            <stop offset="0.66679" stop-color="#86E5FF" />
+                            <stop offset="0.79179" stop-color="#D9F7FF" />
+                            <stop offset="0.89679" stop-color="#E4E073" />
+                            <stop offset="1" stop-color="#F5FF7D" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+
+            <!-- footer direitos reservados-->
+            <div class="row">
+                <div class="col-12 group-direitos">
+                    <div class="col-6">
+
+                        <p style="text-align: center;">&copy; 2024 Impacto Profundo &nbsp; Todos os direitos
+                            reservados.
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <p> <a href="#">Politica de Privacidade</a> &nbsp; &nbsp;
+                            <a href="#">Termos de Serviço</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="./assets/js/global.js" defer></script>
+
+    <script src="./assets/js/doacao.js" defer></script>
+    <script src="./assets/js/contato.js" defer></script>
+    <script src="./assets/js/politicas.js" defer></script> <!-- chekbox politicas implementando -->
+
+</body>
+
+</html>
