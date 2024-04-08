@@ -8,45 +8,405 @@
     <link rel="stylesheet" href="../css/global/style.css">
     <link rel="stylesheet" href="../css/global/reset.css">
     <link rel="stylesheet" href="../css/global/global.css">
+    <link rel="stylesheet" href="../css/global/global.css">
+
     <link rel="shortcut icon" href="../image/global/favicon.png" type="image/x-icon">
     <link
         href="https://fonts.googleapis.com/css2?family=Dongle&family=Geostar&family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="../css/global/form.css">
+    <link rel="stylesheet" href="../css/global/footer.css">
+    <link rel="stylesheet" href="../css/global/responsividade-contato-footer.css">
+
 </head>
+
+<style>
+    .navbar {
+        display: flex;
+        /*align-items: center; */
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+
+
+
+    .cabecalho__menu__selecoes {
+        display: flex;
+        align-items: center;
+    }
+
+    .cabecalho__menu__toggle {
+        background: none;
+        border: none;
+        cursor: pointer;
+        /*/ == font-size: 24px;*/
+        color: black;
+    }
+
+    @media screen and (max-width: 768px) {
+        .cabecalho__menu__selecoes__lista {
+            display: none;
+        }
+
+        .cabecalho__menu__toggle {
+            display: block;
+        }
+
+        .navbar {
+            justify-content: space-between;
+        }
+
+        .cabecalho__menu__divisao__imagem {
+            width: 40px;
+            /* Ajuste o tamanho da imagem conforme necessário */
+            height: auto;
+        }
+
+        .cabecalho__menu__divisao__logo {
+            font-size: 24px;
+            /* Ajuste o tamanho da fonte conforme necessário */
+
+
+        }
+
+        .cabecalho__menu__toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            /*/ == font-size: 24px;*/
+            color: black;
+            text-decoration: none;
+            margin-left: 120px;
+        }
+    }
+</style>
 
 <body>
 
-
-
     <header>
-        <nav class="cabecalho">
-            <div class="cabecalho__menu__divisao">
-                <img class="cabecalho__menu__divisao__imagem" src="../image/global/header.png" alt="globo">
-                <a href="../../index.html" class="cabecalho__menu__divisao__logo"> <strong
-                        class="cabecalho__menu__divisao__impacto">Impacto</strong>
-                    <strong class="cabecalho__menu__divisao__profundo">Profundo</strong></a>
-            </div>
+        <div class="row">
+            <div class="col-12">
 
-            <div class="cabecalho__menu__selecoes">
-                <ul class="cabecalho__menu__selecoes__lista">
 
-                    <li>
-                        <a class="cabecalho__menu__selecoes__lista__link" href="../../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a class="cabecalho__menu__selecoes__lista__link" href="./sobre.html">Sobre</a>
-                    </li>
-                    <li>
-                        <a class="cabecalho__menu__selecoes__lista__link" href="./saude.html">Saúde</a>
-                    </li>
-                    <li>
-                        <a class="cabecalho__menu__selecoes__lista__link" href="./doacao.html">Doação</a>
-                    </li>
-                </ul>
+                <div class="navbar">
+                    <div class="col-8">
+                        <div class="logo-container">
+                            <img class="cabecalho__menu__divisao__imagem" src="../image/global/header.png" alt="globo">
+                            <a href="../../index.html" class="cabecalho__menu__divisao__logo">
+                                <strong class="cabecalho__menu__divisao__impacto">Impacto</strong>
+                                <strong class="cabecalho__menu__divisao__profundo">Profundo</strong>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="cabecalho__menu__selecoes">
+                        <ul class="cabecalho__menu__selecoes__lista">
+                            <li><a class="cabecalho__menu__selecoes__lista__link" href="../../index.html">Inicio</a>
+                            </li>
+                            <li><a class="cabecalho__menu__selecoes__lista__link" href="./sobre.html">Sobre</a></li>
+                            <li><a class="cabecalho__menu__selecoes__lista__link" href="./saude.html">Saúde</a></li>
+                            <li><a class="cabecalho__menu__selecoes__lista__link" href="./doacao.html">Doação</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-4">
+
+                        <button class="cabecalho__menu__toggle">
+                            <span class="cabecalho__menu__toggle-icon">&#9776;</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </div>
     </header>
     <main>
+
+        <!-- ======================= section Formulario ========  -->
+
+        <section class="col-12 contato">
+
+            <!-- ======================= LINHA 1 (ROW)  Mapa1 e Formulario ========  -->
+            <div class="row linha-contato">
+
+                <!-- Mapas 1 -->
+                <div class="col-6 map1"> <!-- Coluna 1 | Mapa -->
+                    <header class="header-contato">
+                        <div class="col">
+                            <h6> Cadastro de Informações </h6>
+                            <h1><strong>Formulário</strong></h1>
+
+                        </div>
+                    </header>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14626.289401635664!2d-46.931951749999996!3d-23.583797899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1707947454515!5m2!1spt-BR!2sbr"
+                        style="border:0;" width="100%" height="500fr" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+                <!-- Formulario -->
+                <div class="col-6 form" style="background-color:rgb(255, 255, 255)"> <!-- Coluna 2 | Formulário -->
+                    <header class="header-contato">
+                        <div class="col">
+                            <h2 style="text-align: center; padding: 10px;">Cadastro de Informações de Risco Ambiental
+                            </h2>
+                        </div>
+                    </header>
+
+
+                    <div class="cadastroForm">
+
+                        <form id="cadastroForm" action="#" method="post">
+
+                            <div class="etapas">
+
+                                <div class="progress-bar">
+                                    <div class="step step-1" onclick="selecionarEtapa(1)"><span>1</span></div>
+                                    <div class="step step-2" onclick="selecionarEtapa(2)"><span>2</span></div>
+                                    <div class="step step-3" onclick="selecionarEtapa(3)"><span>3</span></div>
+                                    <div class="progress"></div>
+                                </div>
+
+                                <!-- Etapa 1: Informações Pessoais -->
+                                <div class="etapas-forms">
+
+                                    <div class="etapa-formulario etapa-1 etapa-atual">
+                                        <fieldset id="fieldset">
+                                            <legend>Dados para Cadastro</legend>
+                                            <div class="field">
+                                                <label for="nome">Nome:</label>
+                                                <input type="text" id="nome" name="nome" placeholder="Nome Completo"
+                                                    value="">
+                                            </div>
+                                            <div class="field">
+                                                <label for="email">Email:</label>
+                                                <input type="email" id="email" name="email" placeholder="Email"
+                                                    value="">
+                                            </div>
+                                            <div class="field-group">
+                                                <div class="field">
+                                                    <label for="data">Data:</label>
+                                                    <input type="date" id="data" name="data" value="" required>
+                                                </div>
+                                                <div class="field">
+                                                    <label for="hora">Hora:</label>
+                                                    <input type="time" id="hora" name="hora" value="" required>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label for="localizacao">Localização:</label>
+                                                <input type="text" id="localizacao" name="localizacao"
+                                                    placeholder="Rua: José dias, ou https://  " value="" required>
+                                                <!-- Google Maps -->
+                                            </div>
+                                            <div class="field">
+                                                <label for="risco">Nível de Risco:</label>
+                                                <select id="risco" name="risco" required>
+                                                    <option value="baixo">Baixo</option>
+                                                    <option value="médio" selected>Médio</option>
+                                                    <option value="alto">Alto</option>
+                                                </select>
+                                            </div>
+                                            <div class="row"> <!-- Linha 2-->
+
+                                                <div class="field-group ">
+                                                    <!-- Checkbox para aceite de políticas -->
+                                                    <div class="col">
+                                                        <input type="checkbox" id="aceitarPoliticas"
+                                                            name="aceitarPoliticas" value="aceitarPoliticas"> <label
+                                                            for="aceitarPoliticas"> Eu li e concordo com as políticas de
+                                                            privacidade
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <!-- criar scroll de politicas de opção selecionada style="display: true;"-->
+                                        <div class="row">
+                                            <div id="politicas" style="display: none;">
+                                                <h3>Políticas de Privacidade</h3>
+                                                <p>Estas são as nossas políticas de privacidade, em conformidade com a
+                                                    LGPD:
+                                                </p>
+                                                <ol>
+                                                    <li>Coletamos apenas informações necessárias para os fins
+                                                        especificados.
+                                                    </li>
+                                                    <li>As informações pessoais são tratadas de forma confidencial e
+                                                        segura.
+                                                    </li>
+                                                    <li>As informações não serão compartilhadas com terceiros sem
+                                                        consentimento.</li>
+                                                    <li>Os usuários têm o direito de acessar, corrigir e excluir seus
+                                                        dados
+                                                        pessoais.</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <br><br>
+
+                                        <button type="button" id="Next1"
+                                            onclick="proximoEtapa() ; selecionarEtapa(2)">Continuar</button>
+                                    </div>
+                                    <!-- Etapa 2: Detalhes Sobre Riscos Ambientais -->
+                                </div>
+                                <div class="etapas-forms">
+                                    <div class="etapa-formulario etapa-2">
+
+                                        <fieldset>
+                                            <legend>Detalhes Sobre Riscos Ambientais</legend>
+                                            <div class="field">
+                                                <label for="qtdPessoas">Quantidade de Pessoas Afetadas</label>
+                                                <input type="number" id="qtdPessoas" name="qtdPessoas" placeholder="0"
+                                                    value="" required>
+                                            </div>
+                                            <div class="field">
+                                                <label for="causas">Principais Causas:</label>
+                                                <select id="causas" name="causas" required>
+                                                    <optgroup label="Principais Causas">
+                                                        <option value="Selecionar"></option>
+                                                        <option value="calor-excessivo">Calor Excessivo</option>
+                                                        <option value="desmatamento">Desmatamento</option>
+                                                        <option value="poluicao">Poluição</option>
+                                                        <option value="alta-temperatura">Alta Temperatura</option>
+                                                        <option value="enchente">Enchente</option>
+                                                        <option value="vento-forte">Vento Forte</option>
+                                                        <option value="chuva-intensa">Chuva Intensa</option>
+                                                        <option value="granizo-de-chuva">Granizo de Chuva</option>
+                                                        <option value="alagamento">Alagamento</option>
+                                                        <option value="deslizamento-de-terra">Deslizamento de Terra
+                                                        </option>
+                                                        <option value="terremoto">Terremoto</option>
+                                                        <option value="tempestade">Tempestade</option>
+                                                        <option value="furacao">Furacão</option>
+                                                        <option value="incendio-florestal">Incêndio Florestal</option>
+                                                        <option value="poluicao-ar">Poluição do Ar</option>
+                                                        <option value="seca">Seca</option>
+                                                        <option value="tsunami">Tsunami</option>
+                                                        <option value="nevasca">Nevasca</option>
+                                                    </optgroup>
+                                                </select>
+                                            </div>
+                                            <div class="field">
+                                                <label for="outrasCausas">Outras Causas:</label>
+                                                <textarea id="outrasCausas" name="outrasCausas" rows="4"></textarea>
+                                            </div>
+                                            <div class="field">
+                                                <label for="sugestao">Elogios e Sugestão de Melhorias:</label>
+                                                <textarea id="sugestao" name="sugestao" rows="4"></textarea>
+                                            </div>
+                                        </fieldset>
+
+                                        <!--<button type="button" onclick="proximoEtapa() & exibirDados()">Continuar</button>-->
+                                        <button type="button" onclick="etapaAnterior()">Etapa Anterior</button>
+
+                                        <button type="button" id="Next1"
+                                            onclick="proximoEtapa() & exibirDados(); selecionarEtapa(3)">Continuar</button>
+
+                                    </div>
+                                </div>
+                                <!-- Etapa 3: Detalhes Ambientais -->
+                                <div class="etapas-forms">
+                                    <div class="etapa-formulario etapa-3">
+
+                                        <section>
+                                            <fieldset>
+
+                                                <div id="dados-cadastrado"></div>
+                                            </fieldset>
+                                        </section>
+                                        <button type="button" onclick="etapaAnterior()">Etapa Anterior</button>
+
+                                        <button type="submit" onclick="enviarFormulario(event)">Enviar</button>
+                                    </div>
+                                    <!--- <button onclick="exibirDados()">Confirmar</button> -->
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======================= LINHA 2 (ROW)  Mapa2 e Mapa3 ========  -->
+            <div class="row linha-mapas">
+
+                <!-- Mapas -->
+                <div class="col-12 mapas">
+
+                    <header class="header-contato">
+                        <div class="col">
+                            <h6>Prevenção</h6>
+                            <h1><strong>Localizações</strong></h1>
+                        </div>
+                    </header>
+
+                    <!-- Mapas 2-->
+                    <div class="col-6 map2"> <!-- Coluna 1 | Mapa 2 -->
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14626.289401635664!2d-46.931951749999996!3d-23.583797899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1707947454515!5m2!1spt-BR!2sbr"
+                            style="border:0;" width="100%" height="500fr" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+                        <div class="col-6">
+
+                            <div class="row"> <!-- Linha detalhes telefone e localização -->
+                                <header class="header-contato">
+                                    <h3><strong>São Paulo</strong></h3> <br>
+
+                                    <p>1698 Republica SP</p>
+                                    <ul>
+                                        <li style="display: flex; align-items: center;"> <img
+                                                src="../../assets/image/footer/telefone_black.png" width="20px"
+                                                alt="logo_Impacto_Profundo" margin="10px"> &nbsp;(11) 1234-567</li>
+                                    </ul>
+                                </header>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mapas 3 -->
+                    <div class="col-6 map3"> <!-- Coluna 2 | Mapa 3 -->
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14626.289401635664!2d-46.931951749999996!3d-23.583797899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1707947454515!5m2!1spt-BR!2sbr"
+                            style="border:0;" width="100%" height="500fr" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="col-6">
+
+                            <div class="row"> <!-- Linha detalhes telefone e localização -->
+                                <header class="header-contato">
+                                    <h3><strong>São Paulo</strong></h3> <br>
+                                    <p>123 Avenida Paulista SP</p>
+                                    <ul>
+                                        <li style="display: flex; align-items: center;"> <img
+                                                src="../../assets/image/footer/telefone_black.png" width="20px"
+                                                alt="logo_Impacto_Profundo" margin="10px"> &nbsp;(11) 1234-567</li>
+                                    </ul>
+                                </header>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
 
     </main>
 
@@ -55,8 +415,133 @@
 
 
 
+    <footer>
+        <div class="footer">
+            <!-- Logo-->
+            <div class="row">
+
+                <div class="col-4 logo-nomelogo">
+                    <div class="col-2 logo">
+                        <a href="../../index.html">
+                            <img src="../../assets/image/footer/logo_Impacto_Profundo.png" width="60px"
+                                alt="logo_Impacto_Profundo"></a>
+                    </div>
+                    <!--Nome Logo-->
+                    <div class="col-9 nomelogo">
+                        <a href="../../index.html" class="nomelogo"> <strong
+                                class="cabecalho__menu__divisao__impacto">Impacto</strong>
+                            <strong class="cabecalho__menu__divisao__profundo">Profundo</strong></a>
+                    </div>
+
+                    <!-- Contato Emaol -->
+                    <div class="row contato-email">
+
+                        <div class="col-9 ">
+                            <h5>Contato:
+                                (11) 1234-567 info@impactoprofundo.gmail.com</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sobre -->
+                <div class="col-4 sobre-footer">
+                    <h5>Sobre</h5>
+                    <p class="sobrefooter">Impacto Profundo <i>Bem-vindo ao nosso site dedicado a orientar e apoiar
+                            a humanidade diante do aumento acelerado das temperaturas na Terra e da intensificação das
+                            condições climáticas.</i></p>
+                </div>
+
+                <!-- Categoria -->
+                <div class="col-1 categoria right">
+                    <h5>Categoria</h5>
+                    <ul class="categoria">
+                        <li><a href="../pages/sobre.html">Sobre</a></li>
+                        <li><a href="../pages/saude.html">Saúde</a></li>
+                        <li><a href="../pages/doacao.html">Doação</a></li>
+                        <li><a href="../pages/contato.html">Contato</a></li>
+                        <li><a href="../pages/loja.html">Loja</a></li>
+                    </ul>
+                </div>
+
+                <!-- Parceiros -->
+                <div class="col-2 parceiros right">
+                    <h5>Parceiros</h5>
+                    <ul class="parceiros">
+                        <li><a href="#">Parceiro 1</a></li>
+                        <li><a href="#">Parceiro 2</a></li>
+                        <li><a href="#">Como contribuir</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Redes Sociais -->
+            <div class="row">
+                <div class="col-6 social">
+                    <ul class="social-icons">
+                        <li><a class="linkedin" href="#"><i><img src="../../assets/image/footer/linkedin_black.png "
+                                        alt="Linkedin">
+                                </i></a>
+                        </li>
+                        <li><a class="youtube" href="#"><i><img src="../../assets/image/footer/social_youtube.png"
+                                        alt="Youtube"></i></a>
+                        </li>
+                        <li><a class="insta" href="#"><i><img src="../../assets/image/footer/instagram_black.png"
+                                        alt="Instagram">
+                                </i></a>
+                        </li>
+                        <li><a class="facebook" href="#"><i><img src="../../assets/image/footer/face.png"
+                                        alt="Facebook"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- HR SVG copiado do figma-->
+            <div class="hr">
+                <svg width="1 fr" height="10" viewBox="0 0 1370 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1370" y="10" width="1370" height="6" transform="rotate(180 1370 10)"
+                        fill="url(#paint0_linear_272_279)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_272_279" x1="2740" y1="10" x2="1370" y2="10"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="0.0001" stop-color="#39ABE0" />
+                            <stop offset="0.27179" stop-color="#D89736" />
+                            <stop offset="0.45679" stop-color="#DBA472" />
+                            <stop offset="0.56" stop-color="#B1C4B7" />
+                            <stop offset="0.66679" stop-color="#86E5FF" />
+                            <stop offset="0.79179" stop-color="#D9F7FF" />
+                            <stop offset="0.89679" stop-color="#E4E073" />
+                            <stop offset="1" stop-color="#F5FF7D" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+
+            <!-- footer direitos reservados-->
+            <div class="row">
+                <div class="col-12 group-direitos">
+                    <div class="col-6">
+
+                        <p style="text-align: center;">&copy; 2024 Impacto Profundo &nbsp; Todos os direitos
+                            reservados.
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <p> <a href="#">Politica de Privacidade</a> &nbsp; &nbsp;
+                            <a href="#">Termos de Serviço</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="../../assets/js/contato.js" defer></script>
+    <script src="../../assets/js/politicas.js" defer></script> <!-- chekbox politicas implementando -->
 
 
-
-    <footer></footer>
 </body>
+
+</html>

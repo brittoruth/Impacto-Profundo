@@ -1,0 +1,125 @@
+/*p {
+    font-family: poppins;
+    font-size: 20px;
+    margin: 10px;
+    text-align: justify;
+    line-height: 1.5;
+    margin: 5;
+}
+
+h1 {
+    text-align: left;
+    padding: 10px;
+    padding-right: 1px;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
+*/
+.parceiro {
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;  
+    padding-top: 80px; 
+    padding-right: 20px;
+    padding-left:110px;
+    padding-bottom: 80px;
+
+    }
+.parceiro img{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;   
+
+}
+
+
+#about-us {
+    border: 0px solid;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+#team {
+    padding: 10px;
+    padding-left: 15%;
+    width: auto;
+    height: 700px;
+    justify-content: center;
+
+}
+
+#team p h1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px;
+}
+
+#conteudo {
+    width: 50%;
+    height: auto;
+    /* Define a altura como 50% da altura do article */
+    flex-grow: 1;
+    /* Permite que o #conteudo ocupe todo o espaço vertical disponível */
+    /*  background-color: aqua;*/
+    padding: 10px;
+}
+
+#fotos {
+    width: 50%;
+    height: auto;
+    /*flex-grow: 1;*/
+    /*background-color: brown;*/
+    padding: 10px;
+    text-align: center;
+}
+
+#fotos img {
+    width: 600px;
+    height: 500px;
+    display: inline-block;
+    padding-top: 60px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#conteudo_2 table {
+    border: 0px solid;
+    align-items: center;
+    width: 1000px;
+    height: 500px;
+
+}
+
+
+
+.slider-content {
+    text-align: center;
+    display: block;
+
+    position: relative;
+}
+
+#conteudo_2 img {
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    bottom: 0;
+    align-self: auto;
+}
+
+#conteudo_2 p h1 {
+    text-align: center;
+}
+
+

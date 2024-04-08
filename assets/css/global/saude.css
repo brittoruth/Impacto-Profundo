@@ -1,0 +1,129 @@
+p {
+    font-size: 2.0rem;
+    font-family: "Poppins", sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1.5em;
+}
+
+
+.foto1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.rem;
+    padding: 1rem 1rem;
+}
+
+.texto_foto1 {
+    display: flex;
+    justify-content: center;
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
+
+.foto2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0.2rem 0.4rem;
+    padding: 0.4rem;
+}
+
+.texto_foto2 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.foto3 {
+    display: flex;
+    justify-content: right;
+
+}
+
+.article1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.menu-artigo h1 {
+    justify-content: left;
+    margin: 0.4rem;
+    padding: 0.5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.menu-artigo h4 {
+    justify-content: left;
+    margin: 0.4rem;
+    padding: 0.5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.foto4 {
+    display: flex;
+    justify-content: right;
+    border-radius: 100%;
+    padding: 0.5rem;
+    margin: 0.4rem;
+}
+
+.foto4 img {
+    width: 80px;
+}
+
+.foto5 {
+    display: flex;
+    justify-content: left;
+    border-radius: 100%;
+}
+
+.foto5 p {
+    justify-content: left;
+    margin: 0.4rem;
+    padding: 0.5rem;
+
+}
+
+.texto_foto5 p {
+    display: flex;
+    justify-content: left;
+    margin: 0;
+    padding: 0.5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.canva {
+    width: 100%;
+    margin-left: 1.6em;
+    margin-right: 1.6em;
+    margin-bottom: 0px;
+}
+
+.article-texto {
+    padding-top: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1.5em;
+}
+
+.populacao {
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1.5em;
+
+}
+
+.orientacao {
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1.5em;
+}
