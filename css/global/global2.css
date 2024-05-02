@@ -1,0 +1,60 @@
+/* nav */
+
+.cabecalho__menu__divisao__logo {
+    color: black;
+}
+
+.cabecalho__menu__divisao__impacto {
+    color: #000000;
+}
+
+.cabecalho__menu__divisao__profundo {
+    color: #0081C9;
+}
+
+.cabecalho__menu__divisao__logo {
+    font-family: "Dongle", sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 48px;
+}
+
+.cabecalho {
+    display: flex;
+    height: 6vh;
+    justify-content: space-between;
+
+}
+
+
+
+.cabecalho__menu__divisao {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 84px;
+}
+
+.cabecalho__menu__divisao__imagem {
+    width: 69px;
+    height: 67px;
+}
+
+.cabecalho__menu__selecoes__lista {
+    display: flex;
+    margin: 23px;
+}
+
+.cabecalho__menu__selecoes__lista li a {
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 5rem;
+    color: black;
+    font-size: 20px;
+    margin-right: 100px;
+    padding: 3px;
+}
+
+.cabecalho__menu__selecoes__lista__link:hover {
+    border-bottom: 2px solid blue;
+}

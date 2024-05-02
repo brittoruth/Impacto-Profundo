@@ -1,0 +1,163 @@
+.footer {
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    margin: 0px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo {
+    border: 22px;
+    padding: 10px;
+}
+
+.nomelogo {
+    padding-top: 25px;
+    margin-top: 15px;
+    padding-left: 8px;
+    font-family: "Dongle", sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.row .contato-email {
+    padding-top: 85px;
+    padding-right: 50%;
+    padding-bottom: 20px;
+}
+
+.sobre-footer {
+    margin-right: 45px;
+    flex-wrap: wrap;
+    padding-top: 8px;
+    padding-bottom: 20px;
+}
+
+.sobrefooter {
+    margin-right: 45px;
+    flex-wrap: wrap;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+/*Icones sociaiss*/
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.social-icons li img {
+    width: 25px;
+    display: inline-block;
+    border: 2px;
+}
+
+.categoria {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 2px;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.parceiros {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 2px;
+    flex-wrap: wrap;
+    padding-top: 8px;
+    padding-bottom: 10px;
+
+}
+
+ul,
+li {
+    font-size: 12px;
+    margin-bottom: 5px;
+
+}
+
+.linha_mapa2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 2px;
+}
+
+.linha_mapa3 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 2px;
+}
+
+.hr {
+    align-items: center;
+    padding-left: 8px;
+    margin-bottom: 10px;
+}
+
+.col-12 .group-direitos {
+    flex-wrap: wrap;
+}
+
+.group-direitos p {
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /*  mobile */
+    [class*="col-"] {
+        width: 100%;
+    }
+    .logo {
+margin: 10px 0 0 0;    }
+    
+.nomelogo {
+    
+    margin: 10px 0 0 0;    }
+
+
+    .categoria {
+        width: 100px;
+        padding: 0 0 70px 0;
+        height: 130px;
+    }
+
+
+    .parceiros {
+        width: 100px;
+        padding: 0 0 70px 0;
+        height: 130px;
+    }
+
+
+    .social-icons {
+        align-items: center;
+
+
+    }
+
+}
