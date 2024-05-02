@@ -21,6 +21,8 @@
 
     <link rel="stylesheet" href="./assets/css/global/responsividade-contato-footer.css">
 
+    <link rel="stylesheet" href="./assets/css/global/avaliacoes-faq.css">
+
 
     <link
         href="https://fonts.googleapis.com/css2?family=Dongle&family=Geostar&family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap"
@@ -51,21 +53,14 @@
         }
     </style>
 
-    <!-- Depoimento-->
+    <!-- Depoimentos e Perguntas Frequentes-->
     <style>
-        .depoimentos {
+        #depoimentos {
             margin-left: 10%;
             margin-right: 10%;
             line-height: 1.5em;
         }
-
-        summary {
-            padding: 10px;
-            padding-left: 25px;
-            border-bottom: 1px solid black;
-            font-weight: bold;
-        }
-
+        
         summary:hover,
         summary:focus {
             color: blue;
@@ -82,7 +77,7 @@
             cursor: pointer;
             display: inline-flex;
             font-family: Arial, sans-serif;
-            font-size: 18px;
+            font-size: 0.9em;
             font-weight: 600;
             justify-content: center;
             line-height: 1.25;
@@ -1082,115 +1077,97 @@
             </section>
 
 
-            <!-- Depoimentos -->
+            <!-- Depoimentos e Perguntas Frequentes -->
 
-            <section class="depoimentos">
+            <section id="depoimentos">
                 <div class="row">
                     <div class="col-12">
-                        <h1>Depoimentos</h1>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th align="left">★ ★ ★ ★ ★</th>
-                                    <th align="left">★ ★ ★ ★ ★</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quas tempore
-                                            excepturi
-                                            accusantium natus omnis repudiandae, a corporis praesentium ab dolore
-                                            veritatis
-                                            laboriosam non libero sed distinctio voluptate quam hic."</p>
-                                    </td>
-                                    <td>
-                                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quas tempore
-                                            excepturi
-                                            accusantium natus omnis repudiandae, a corporis praesentium ab dolore
-                                            veritatis
-                                            laboriosam non libero sed distinctio voluptate quam hic."</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><span><img src="./assets/image/index/avatar.png" alt="Avatar" width="50"
-                                                height="50"><strong>&emsp;Fulano de Tal | Meta</strong></span></td>
-                                    <td><span><img src="./assets/image/index/avatar.png" alt="Avatar" width="50"
-                                                height="50"><strong>&emsp;Ciclano de Algo | Greenpeace</strong></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Analista de Infraestrutura</td>
-                                    <td>Gerente de Operações</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <br>
-                        <br>
-                        <br>
-                        <div>
-                            <h1>Perguntas Frequentes</h1>
-
-                            <p>Encontre respostas para as dúvidas mais comuns sobre aquecimento global, saúde e as
-                                atividades da
-                                nossa
-                                organização.</p>
+                        <h1 class="avaliacoes">Depoimentos</h1>
+                        <section class="avaliacoes">
+                            <p class="avaliacoes">Saiba o que as pessoas acham dos nossos produtos ecológicos.</p>
+                            <section id="avaliacoes-box">
+                                <section class="avaliacoes-boxubox">
+                                    <p class="avaliacoes-boxubox">★ ★ ★ ★ ★</p>
+                                    <p class="avaliacoes-boxubox">"Adorei a canequinha. Detalhes dela são perfeitos, 
+                                        material parece ser muito resistente e além disso é 100% reciclável. Muito bom saber 
+                                        que além de ter essa caneca incrível, ainda ajudei o planeta comprando."</p>
+                                    <section class="avaliacoes-nome-empresa">
+                                        <img src="./assets/image/index/avatar.png" alt="Avatar" width="50" height="50" class="avaliacoes-nome-empresa">
+                                        <p class="avaliacoes-nome-empresa"><strong>Bill Gates | Meta</strong></p>
+                                    </section>
+                                    <p class="avaliacoes-cargo">Analista de Infraestrutura</p>
+                                </section>
+                                <section class="avaliacoes-boxubox">
+                                    <p class="avaliacoes-boxubox">★ ★ ★ ★ ★</p>
+                                    <p class="avaliacoes-boxubox">"Cara, simplesmente sensacional a camiseta. Além de ficar 
+                                        estiloso com ela, é muito satisfatório saber que foi produzida com zero impacto para o nosso planeta."</p>
+                                    <section class="avaliacoes-nome-empresa">
+                                        <img src="./assets/image/index/avatar.png" alt="Avatar" width="50" height="50" class="avaliacoes-nome-empresa">
+                                        <p class="avaliacoes-nome-empresa"><strong>Elon Musk | Greenpeace</strong></p>
+                                    </section>
+                                    <p class="avaliacoes-cargo">Gerente de Operações</p>
+                                </section>
+                            </section>
+                        </section>
+                        <script>
+                            function responsividadeAvaliacoes() {
+                                var larguraJanela = window.innerWidth;
+                                var avaliacoesBox = document.getElementById("avaliacoes-box");
+                                if (larguraJanela < 1024) {
+                                    avaliacoesBox.style.flexWrap = "wrap";
+                                } else {
+                                    avaliacoesBox.style.flexWrap = "nowrap";
+                                };
+                            }
+                            responsividadeAvaliacoes();
+                            window.addEventListener('resize', responsividadeAvaliacoes);
+                        </script>
+                        <h1 class="faq">Perguntas Frequentes</h1>
+                        <section class="faq">
+                            <p class="faq-destaque">Encontre respostas para as dúvidas mais comuns sobre 
+                                aquecimento global, saúde e as atividades da nossa organização.</p>
                             <details>
                                 <summary>O que é o aquecimento global?</summary>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum culpa, ipsum quaerat
-                                illo
-                                natus
-                                soluta, debitis rerum quas maxime error, impedit adipisci repellendus vitae ipsam nam
-                                dolorem
-                                aut ipsa
-                                inventore.
+                                O aquecimento global é o aumento da temperatura média da Terra devido à emissão 
+                                de gases do efeito estufa. Isso causa mudanças climáticas, como o derretimento das 
+                                calotas polares e o aumento do nível do mar.
                             </details>
                             <details>
                                 <summary>Como o aquecimento global afeta a saúde?</summary>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum culpa, ipsum quaerat
-                                illo
-                                natus
-                                soluta, debitis rerum quas maxime error, impedit adipisci repellendus vitae ipsam nam
-                                dolorem
-                                aut ipsa
-                                inventore.
+                                O aquecimento global pode ter diversos impactos na saúde humana, como o aumento de 
+                                doenças transmitidas por vetores, o agravamento de condições respiratórias e cardiovasculares, 
+                                a escassez de recursos hídricos e o aumento do estresse térmico.
+                            </details>
+                            <details>
+                                <summary>Qual é o papel da saúde no combate ao aquecimento global?</summary>
+                            A saúde desempenha um papel fundamental no combate ao aquecimento global, pois é afetada pelos seus 
+                            impactos e pode contribuir para a mitigação e adaptação às mudanças climáticas.
+                            </details>
+                            <details>
+                                <summary>Quais são os principais gases de efeito estufa?</summary>
+                                Os principais gases de efeito estufa são o dióxido de carbono (CO²), o metano (CH⁴) e o 
+                                óxido nitroso (N²O).
                             </details>
                             <details>
                                 <summary>O que podemos fazer para combater o aquecimento global?</summary>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum culpa, ipsum quaerat
-                                illo
-                                natus
-                                soluta, debitis rerum quas maxime error, impedit adipisci repellendus vitae ipsam nam
-                                dolorem
-                                aut ipsa
-                                inventore.
+                                Existem diversas ações que podemos tomar para combater o aquecimento global, como reduzir o 
+                                consumo de energia e as emissões de gases de efeito estufa, adotar fontes de energia renováveis 
+                                e apoiar políticas de sustentabilidade.
                             </details>
                             <details>
                                 <summary>Como posso ajudar a organização?</summary>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum culpa, ipsum quaerat
-                                illo
-                                natus
-                                soluta, debitis rerum quas maxime error, impedit adipisci repellendus vitae ipsam nam
-                                dolorem
-                                aut ipsa
-                                inventore.
+                                Você pode ajudar a nossa organização fazendo uma doação para apoiar as nossas iniciativas de 
+                                combate ao aquecimento global e promoção da saúde.
                             </details>
                             <details>
                                 <summary>Como faço para entrar em contato?</summary>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum culpa, ipsum quaerat
-                                illo
-                                natus
-                                soluta, debitis rerum quas maxime error, impedit adipisci repellendus vitae ipsam nam
-                                dolorem
-                                aut ipsa
-                                inventore.
+                                Para entrar em contato conosco, basta preencher o formulário de contato em nossa página ou 
+                                enviar um e-mail para o nosso endereço de contato.
                             </details>
-                            <h2>Ainda tem dúvidas?</h2>
-                            <p>Entre em contato para mais informações.</p>
-                            <button class="botao" type="button">Contato</button>
-                        </div>
+                            <h2 class="faq">Ainda tem dúvidas?</h2>
+                            <p class="faq">Entre em contato para mais informações.</p>
+                            <a href="./#contato" class="botao-contato">Contato</a>
+                        </section>
                     </div>
                 </div>
             </section>

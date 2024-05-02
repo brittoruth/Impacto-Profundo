@@ -1,0 +1,106 @@
+h1.avaliacoes {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    margin-bottom: 0.5em;
+    margin-top: 1.25em
+}
+
+section.avaliacoes {
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    line-height: 2.0;
+    margin-bottom: 2.5em;
+}
+
+p.avaliacoes {
+    font-size: 0.8em;
+    color: #484848;
+    margin-bottom: 1.25em;
+    text-align: center;
+}
+
+#avaliacoes-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0.63em
+}
+
+section.avaliacoes-boxubox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 0.94em;
+    margin-right: 0.94em
+}
+
+p.avaliacoes-boxubox {
+    margin-top: 0.94em;
+    margin-bottom: 0.63em;
+    font-size: 0.7em
+}
+
+section.avaliacoes-nome-empresa {
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+    align-self: flex-start;
+    margin-bottom: 0.63em;
+}
+
+img.avaliacoes-nome-empresa, p.avaliacoes-nome-empresa {
+    margin-left: 1.25em;
+}
+
+p.avaliacoes-nome-empresa {
+    white-space: nowrap;
+    font-size: 0.6em
+}
+
+p.avaliacoes-cargo {
+    align-self: flex-start;
+    margin-left: 2em;
+    font-size: 0.6em
+}
+
+h1.faq {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    margin-bottom: 1.25em
+}
+
+section.faq {
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    line-height: 2.0
+}
+
+p.faq-destaque {
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+h2.faq {
+    text-align: start;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    margin-top: 1.25em
+}
+
+p.faq {
+    margin-bottom: 3%;
+    margin-left: 0%;
+    font-size: 0.8em;
+}
+
+details {
+    font-size: 0.8em;
+    border-bottom: 0.1em solid black
+}
