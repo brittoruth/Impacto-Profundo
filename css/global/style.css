@@ -1,0 +1,108 @@
+.main-container {
+
+    background-image: url('../../image/index/planeta_fogo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    text-align: left;
+    margin-left: 40px;
+
+    z-index: 1;
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 135px;
+
+    transform: translateY(-50%);
+    z-index: 1;
+    margin-top: -30px;
+
+}
+
+.main-title {
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    text-shadow: 2px 2px 2px #0000006b;
+
+}
+
+.main-paragraph {
+    font-size: 1.5em;
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+}
+
+.button {
+    position: absolute;
+    left: 135px;
+
+    top: calc(100% - 262px);
+
+    display: inline-block;
+    background-color: #ffc107;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 2px #0000006b;
+
+}
+
+
+.button:hover {
+    background-color: #ffca28;
+}
+
+@media only screen and (max-width: 968px) {
+
+    .main-title {
+        margin-top: 40%;
+        font-size: 3.9rem;
+        text-shadow: 2px 2px 2px #0000006b;
+    }
+
+    .main-paragraph {
+        margin-top: 15%;
+        font-size: 2.5rem;
+        text-shadow: 2px 2px 2px #0000006b;
+
+    }
+
+    .text-container {
+        left: 20px;
+    }
+
+    .button {
+        top: calc(100% - 262px);
+        margin-top: 60%;
+        box-shadow: 2px 2px 2px #0000006b;
+    }
+
+}
