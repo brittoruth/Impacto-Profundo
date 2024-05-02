@@ -1,0 +1,89 @@
+h1.avaliacoes {
+    text-align: start;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    margin-bottom: 12px;
+    margin-top: 20px
+}
+
+section.avaliacoes {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 2.0;
+    margin-bottom: 40px;
+    border-bottom: 2px solid black
+}
+
+p.avaliacoes {
+    font-size: 14px;
+    color: #484848;
+    margin-bottom: 20px
+}
+
+section.avaliacoes-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px
+}
+
+section.avaliacoes-boxubox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 15px;
+    margin-right: 15px
+}
+
+p.avaliacoes-boxubox {
+    margin-bottom: 15px
+}
+
+section.avaliacoes-nome-empresa {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    align-self: flex-start;
+    margin-bottom: 10px
+}
+
+img.avaliacoes-nome-empresa,p.avaliacoes-nome-empresa {
+    margin-left: 20px
+}
+
+p.avaliacoes-cargo {
+    align-self: flex-start;
+    margin-left: 20px
+}
+
+h1.faq {
+    text-align: start;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px
+}
+
+section.faq {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 2.0
+}
+
+p.faq-destaque {
+    margin-bottom: 25px;
+}
+
+h2.faq {
+    text-align: start;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    margin-top: 20px
+}
+
+p.faq {
+    margin-bottom: 15px
+}
