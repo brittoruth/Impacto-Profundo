@@ -1,15 +1,15 @@
-### 🔧 Implantação
+# 🔧 Implantação  JavaScript
 
-# Projeto Impacto-Profundo - JavaScript
-
-## JavaScript
+# Projeto Impacto-Profundo  
 
 
 Nesta seção, apresentamos a validação do formulario de contato com: Cadastro de Úsuario ou Especialista, cadastro de dados pessoais e cadastro de informações de risco ambiental ou duvidas direcionada aos especialistas. 
 ## Java Script Validação formulario
 
+# Site 
 ![Impacto-Profundo](https://github.com/brittoruth/Impacto-Profundo/blob/apresentacaoDoJS/assets/image/apresentacaojs/todosite.gif?raw=true)
 
+# Formulário de contato
 ![Impacto-Profundo](https://github.com/brittoruth/Impacto-Profundo/blob/apresentacaoDoJS/assets/image/apresentacaojs/videovalidação.gif?raw=true)
 
 Script JavaScript:
@@ -256,17 +256,6 @@ Script JavaScript:
 
 --
 '''
-
-[!modeloconsulta](assets\image\apresentacaojs\videovalidação.gif)
-
-
-
-
-
-
-
-
-## 👨🏻‍🏫 Tutor Mateus Gesualdo 
 
 
 
