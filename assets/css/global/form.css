@@ -1,3 +1,35 @@
+
+
+.error {
+    color: red;
+    font-size: 1.5rem;
+    padding-left: 20px;
+    margin: 0;
+
+}
+.facalogin{
+    padding: 0 25% 0 0 ;
+    text-align: center;
+}
+
+
+.obrigado {
+    padding: 25%;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.etapas-forms {
+  /*  background-color: red   
+    max-height: 580px;
+    overflow-y: scroll;;*/
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+}
+
+
 /*============================================ Progressbar =============================================*/
 .progress-bar {
     display: flex;
@@ -157,24 +189,46 @@ form {
     background-color: rgb(255, 255, 255);
     padding-bottom: 30px;
 }
+div.col-6.form{
+    padding-left: 17px;
 
+}
+form#cadastro{
+    margin: 0;
+    padding: 0;
+}
+div.etapas {
+    margin: 0;
+    padding: 0;
+}
 
-
-form fieldset {
+div form fieldset {
     /*    background-color: rgb(230, 96, 176);*/
 
-    margin-top: 9px;
+    margin-top: 0px;
     margin-bottom: 6px;
     border-radius: 4px;
+    margin-left: 8px;
+    padding-right: 32px;
+    padding-left: 17px;
+
+}
+#fieldset{
+    padding: 20px;
+
+}
+
+div.field-cadastroForm{
     border: 0;
 
 }
 
 
-
-
 form legend {
     margin-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 5px;
 }
 
 form h1 {
@@ -198,8 +252,20 @@ form .field {
     display: flex;
     flex-direction: column;
     /*estica todos os campos*/
-    margin: 8px;
+    margin-left: 8px;
+    padding-right: 32px;
+    padding-left: 17px;
+
 }
+
+/*
+form .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /*estica todos os campos
+    margin: 8px;
+}*/
 
 form .field-group {
     display: flex;
