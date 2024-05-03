@@ -127,7 +127,15 @@
             margin-right: 10%;
         }*/
     </style>
-
+    <style>
+        etapas-forms {
+            max-height: 475px;
+            overflow-y: auto;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -795,6 +803,39 @@
                 </div>
             </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <!-- Formulario Contato -->
             <section id="contato">
                 <section class="col-12 contato">
@@ -816,7 +857,12 @@
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
 
-                        <!-- Formulario -->
+                        <!-- =======================  FORMULARIOO -->
+
+
+
+
+
                         <div class="col-6 form" style="background-color:rgb(255, 255, 255)">
                             <!-- Coluna 2 | Formulário -->
                             <header class="header-contato">
@@ -827,186 +873,445 @@
                                 </div>
                             </header>
 
+                            <!-- FORM -->
 
                             <div class="cadastroForm">
 
                                 <form id="cadastroForm" action="#" method="post">
-
                                     <div class="etapas">
                                         <div class="progress-bar">
                                             <div class="step step-1" onclick="selecionarEtapa(1)"><span>1</span></div>
                                             <div class="step step-2" onclick="selecionarEtapa(2)"><span>2</span></div>
                                             <div class="step step-3" onclick="selecionarEtapa(3)"><span>3</span></div>
-                                            <div class="progress"></div>
+                                            <div class="step step-4" onclick="selecionarEtapa(4)"><span>4</span></div>
+                                            <div class="step step-5" onclick="selecionarEtapa(5)"><span>5</span></div>
+                                            <div class="step step-6" onclick="selecionarEtapa(6)"><span>6</span></div>
                                         </div>
-
-                                        <!-- Etapa 1: Informações Pessoais -->
+    
+                                        <!-- Etapa 1: Informações Usuário -->
+    
                                         <div class="etapas-forms">
-
-                                            <div class="etapa-formulario etapa-1 etapa-atual">
-                                                <fieldset id="fieldset">
-                                                    <legend>Dados para Cadastro</legend>
-                                                    <div class="field">
-                                                        <label for="nome">Nome:</label>
-                                                        <input type="text" id="nome" name="nome"
-                                                            placeholder="Nome Completo" value="">
-                                                    </div>
-                                                    <div class="field">
-                                                        <label for="email">Email:</label>
-                                                        <input type="email" id="email" name="email" placeholder="Email"
-                                                            value="">
-                                                    </div>
-                                                    <div class="field-group">
-                                                        <div class="field">
-                                                            <label for="data">Data:</label>
-                                                            <input type="date" id="data" name="data" value="" required>
+                                            <form action="submit" id="formCadastro">
+                                                <div class="etapa-formulario etapa-1 etapa-atual">
+    
+                                                    <fieldset id="fieldset">
+                                                        <div class="formulario">
+                                                            <legend>Cadastro de Usuário</legend>
+                                                            <!-- Formulário de cadastro de usuário -->
+                                                            <div class="field">
+                                                                <label for="nomeCadastro">Nome de
+                                                                    Usuário:</label>
+                                                                <input type="text" name="nomeCadastro" id="nomeCadastro"
+                                                                    placeholder="mariaSilva" value="" required>
+                                                            </div><span name="spanErro" id="erroNome" class="error"></span>
+                                                            <div class="field">
+                                                                <label for="emailCadastro">Email:</label>
+                                                                <input type="email" name="emailCadastro" id="emailCadastro"
+                                                                    placeholder="mariaSilva@gmail.com" value="" required>
+                                                            </div>
+                                                            <div class="row"><span name="spanErro" id="erroEmailCadastro"
+                                                                    class="error"></span></div>
+                                                            <div class="field">
+                                                                <label for="tipoUsuario">Tipo de
+                                                                    Usuário:</label>
+                                                                <select name="tipoUsuario" id="tipoUsuario" required>
+                                                                    <option value="cliente">Cliente</option>
+                                                                    <option value="especialista">Especialista
+                                                                    </option>
+                                                                </select>
+                                                            </div><span id="erroTipoUsuario" class="error"></span>
+    
+                                                            <div class="field-group">
+                                                                <div class="field">
+                                                                    <label for="senhaCadastro">Senha:</label>
+                                                                    <input type="password" name="senhaCadastro"
+                                                                        id="senhaCadastro"
+                                                                        placeholder="Exemplo@123 - Mín. 8  1 maiúscula, 1 minúscula, 1 número, 1 símbolo"
+                                                                        value="" required
+                                                                        title="Senha minima com 8 caracteres, incluindo 1 letra Maiúscula, 1 minúscula, 1 número e 1 c@ractere especial.">
+                                                                </div>
+    
+                                                                <div class="field">
+                                                                    <label for="confirmSenhaCadastro">Confirmar
+                                                                        Senha:</label>
+                                                                    <input type="password" id="confirmSenhaCadastro">
+                                                                </div>
+                                                                <div class="row"> <span id="erroConfirmSenhaCadastro"
+                                                                        class="error"></span>
+                                                                </div>
+                                                                <div class="row"><span id="erroSenhaCadastro"
+                                                                        class="error"></span></div>
+                                                            </div>
+    
+                                                            <span id="erroCadastro" class="error"></span>
+    
+                                                            <button type="submit" id="Next1"
+                                                                onclick="validarCadastro()&preencherDados()">Cadastrar</button>
+                                                            <!--- <button type="button" id="Next1"onclick="proximoEtapa() & exibirDados(); selecionarEtapa(3)">Continuar</button>
+                                                                           <button type="button" id="Next1" onclick="proximoEtapa() ; selecionarEtapa(2)">Continuar</button>-->
+                                                            <div class="facalogin" col >Já tem uma conta? <a href="#login"
+                                                                    onclick="mostrarLogin()&preencherDados()">Faça
+                                                                    login</a>
+                                                            </div>
+                                                    </fieldset>
+    
+                                                </div>
+    
+    
+    
+                                                <!-- Etapa 2: Informações Pessoais    -->
+    
+                                                <div class="etapa-formulario etapa-2">
+    
+                                                    <fieldset id="formPessoa">
+                                                        <div class="formulario">
+    
+                                                            <legend>Cadastro de Pessoa</legend>
+                                                            <div class="field">
+                                                                <label for="nomeUser">Nome Usuário:</label>
+                                                                <input type="text" id="nomeUser" name="nomeUser"
+                                                                    placeholder="mariaSilva"
+                                                                    value=""><!-- oninput="setNomeUsuario()"-->
+                                                            </div><span id="erroNomeUser" class="error"></span>
+    
+                                                            <div class="field">
+                                                                <label for="nomeCompleto">Nome Completo:</label>
+                                                                <input type="text" id="nomeCompleto" name="nomeCompleto"
+                                                                    placeholder="Maria da Silva" value="" required>
+                                                            </div><span id="erroNomeCompleto" class="error"></span>
+    
+                                                            <div class="field">
+                                                                <label for="telefone">Telefone:</label>
+                                                                <input type="tel" id="telefone" name="telefone"
+                                                                    placeholder="11970707070" value="" required>
+                                                            </div><span id="erroTel" class="error"></span>
+    
+                                                            <div class="field">
+                                                                <label for="localizacao">Localização:</label>
+                                                                <input type="text" id="localizacao" name="localizacao"
+                                                                    placeholder="Av. Autonomistas, Osasco, SP, " value=""
+                                                                    required>
+                                                            </div><span id="erroLocalizacao" class="error"></span>
+    
+    
+                                                            <!--<input type="checkbox" id="aceitePoliticasLDPG">-->
+                                                            <div class="row field"> <!-- Linha 2-->
+    
+                                                                <div class="field-group ">
+                                                                    <!-- Checkbox para aceite de políticas -->
+                                                                    <div class="col ">
+                                                                        <input type="checkbox" id="aceitarPoliticas"
+                                                                            name="aceitarPoliticas"
+                                                                            value="aceitarPoliticas">
+                                                                        <label for="aceitarPoliticas">
+                                                                            Eu li e concordo com as
+                                                                            políticas de
+                                                                            privacidade
+                                                                    </div></label>
+                                                                </div>
+                                                            </div>
+    
+                                                            <span id="erroAceite" class="error"></span>
+                                                            <!-- criar scroll de politicas de opção selecionada style="display: true;"-->
+                                                            <div class="row">
+                                                                <div id="politicas" style="display: none;">
+                                                                    <h3>Políticas de Privacidade</h3>
+                                                                    <p>Estas são as nossas políticas de
+                                                                        privacidade,
+                                                                        em
+                                                                        conformidade
+                                                                        com
+                                                                        a
+                                                                        LGPD:
+                                                                    </p>
+                                                                    <ol>
+                                                                        <li>Coletamos apenas informações
+                                                                            necessárias
+                                                                            para os
+                                                                            fins
+                                                                            especificados.
+                                                                        </li>
+                                                                        <li>As informações pessoais são tratadas
+                                                                            de
+                                                                            forma
+                                                                            confidencial e
+                                                                            segura.
+                                                                        </li>
+                                                                        <li>As informações não serão
+                                                                            compartilhadas
+                                                                            com
+                                                                            terceiros
+                                                                            sem
+                                                                            consentimento.</li>
+                                                                        <li>Os usuários têm o direito de
+                                                                            acessar,
+                                                                            corrigir e
+                                                                            excluir
+                                                                            seus
+                                                                            dados
+                                                                            pessoais.</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                            <br><br>
+    
+                                                            <!--<button type="button" onclick="proximoEtapa() & exibirDados()">Continuar</button>-->
+                                                            <button type="button" onclick="etapaAnterior()">Etapa
+                                                                Anterior</button>
+                                                            <button type="submit" id="Next1"
+                                                                onclick="validarPessoa()">Proximo</button>
                                                         </div>
-                                                        <div class="field">
-                                                            <label for="hora">Hora:</label>
-                                                            <input type="time" id="hora" name="hora" value="" required>
-                                                        </div>
+                                                    </fieldset>
+    
+                                                </div>
+    
+                                                <!-- Etapa 3: Cadastro de Riscos                -->
+                                                <div class="formOcorrencia">
+                                                    <div class="etapa-formulario etapa-3">
+                                                        <fieldset class="fieldset" id="formOcorrencia">
+                                                            <div class="formulario" height="500fr">
+    
+                                                                <legend>Detalhes Sobre Riscos Ambientais</legend>
+    
+                                                                <div class="field">
+                                                                    <label for="risco">Nível de Risco:</label>
+                                                                    <select id="risco" name="risco" required>
+                                                                        <option value="baixo">Baixo</option>
+                                                                        <option value="médio" selected>Médio
+                                                                        </option>
+                                                                        <option value="alto">Alto</option>
+                                                                    </select>
+                                                                </div><span id="erroRisco" class="error"></span>
+    
+                                                                <div class="field-group">
+                                                                    <div class="field">
+                                                                        <label for="dataOcorrencia">Data:</label>
+                                                                        <input type="date" id="dataOcorrencia"
+                                                                            name="dataOcorrencia" value="" required>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <label for="horaOcorrencia">Hora:</label>
+                                                                        <input type="time" id="horaOcorrencia" name="hora"
+                                                                            value="" required>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row spanErro">
+                                                                    <div class="col-6"><span id="erroDataOcorrencia"
+                                                                            class="error"></span>
+                                                                    </div>
+                                                                    <div class="col-6"><span id="erroHoraOcorrencia"
+                                                                            class="error"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="field-group">
+                                                                    <div class="field">
+                                                                        <label for="principaisCausas">Principais
+                                                                            Causas:</label>
+                                                                        <select id="principaisCausas"
+                                                                            name="principaisCausas" required="">
+                                                                            <optgroup label="principaisCausas">
+                                                                                <option value="Selecionar"></option>
+                                                                                <option value="desmatamento">
+                                                                                    Desmatamento
+                                                                                </option>
+                                                                                <option value="poluicao">Poluição
+                                                                                </option>
+                                                                                <option value="alta-temperatura">
+                                                                                    Alta
+                                                                                    Temperatura
+                                                                                </option>
+                                                                                <option value="enchente">Enchente
+                                                                                </option>
+                                                                                <option value="vento-forte">Vento
+                                                                                    Forte
+                                                                                </option>
+                                                                                <option value="chuva-intensa">Chuva
+                                                                                    Intensa
+                                                                                </option>
+                                                                                <option value="granizo-de-chuva">
+                                                                                    Granizo
+                                                                                    de
+                                                                                    Chuva
+                                                                                </option>
+                                                                                <option value="alagamento">
+                                                                                    Alagamento
+                                                                                </option>
+                                                                                <option value="deslizamento-de-terra">
+                                                                                    Deslizamento
+                                                                                    de Terra </option>
+                                                                                <option value="terremoto">Terremoto
+                                                                                </option>
+                                                                                <option value="tempestade">
+                                                                                    Tempestade
+                                                                                </option>
+                                                                                <option value="furacao">Furacão
+                                                                                </option>
+                                                                                <option value="incendio-florestal">
+                                                                                    Incêndio
+                                                                                    Florestal </option>
+                                                                                <option value="poluicao-ar">Poluição
+                                                                                    do
+                                                                                    Ar
+                                                                                </option>
+                                                                                <option value="seca">Seca</option>
+                                                                                <option value="tsunami">Tsunami
+                                                                                </option>
+                                                                                <option value="nevasca">Nevasca
+                                                                                </option>
+                                                                            </optgroup>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <label for="qtdPessoasAfetadas">Quantidade
+                                                                            de
+                                                                            Pessoas
+                                                                            Afetadas:</label>
+                                                                        <input type="number" id="qtdPessoasAfetadas"
+                                                                            name="qtdPessoas" placeholder="0" value=""
+                                                                            required><br>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row spanErro">
+                                                                    <div class="col-6"><span id="erroPrincipaisCausas"
+                                                                            class="error"></span></span>
+                                                                    </div>
+                                                                    <div class="col-6"> <span id="erroqtdPessoasAfetadas"
+                                                                            class="error"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="field">
+                                                                    <label for="localizacaoOcorrencia">Localização
+                                                                        da
+                                                                        Ocorrência:</label>
+                                                                    <input type="text" id="localizacaoOcorrencia"
+                                                                        name="localizacaoOcorrencia"
+                                                                        placeholder="Rua: José dias, ou https://..."
+                                                                        value="" required="">
+                                                                </div><span id="erroLocalizacaoOcorrencia"
+                                                                    class="error"></span>
+    
+                                                                <div class="field-group">
+                                                                    <div class="field">
+                                                                        <label for="outrasCausas">Outras
+                                                                            Causas:</label>
+                                                                        <textarea id="outrasCausas" name="outrasCausas"
+                                                                            rows="1"></textarea>
+                                                                    </div><span id="erroOutrasCausas" class="error"></span>
+    
+                                                                    <div class="field">
+                                                                        <label for="perguntas">Perguntas:</label>
+                                                                        <textarea id="perguntas" name="perguntas"
+                                                                            rows="1"></textarea>
+                                                                    </div><span id="erroPerguntas" class="error"></span>
+                                                                </div>
+    
+                                                                <div class="field">
+                                                                    <label for="elogiosSugestoes">Elogios e
+                                                                        Sugestão
+                                                                        de
+                                                                        Melhorias:</label>
+                                                                    <textarea id="elogiosSugestoes" name="elogiosSugestoes"
+                                                                        rows="1"></textarea><br>
+                                                                </div><span id="erroElogiosSugestoes" class="error"></span>
+    
+                                                                <button type="button" onclick="etapaAnterior()">Etapa
+                                                                    Anterior</button>
+                                                                <button type="submit" id="Next1"
+                                                                    onclick="validarOcorrencia()">Proximo</button>
+                                                                <!---  <button type="submit" onclick="enviarFormulario(event)">Enviar</button>-->
+                                                                <!-- <button type="button" onclick="validarOcorrencia(); exibirDados()">Concluir</button>-->
+                                                            </div>
+                                                        </fieldset>
+    
                                                     </div>
-                                                    <div class="field">
-                                                        <label for="localizacao">Localização:</label>
-                                                        <input type="text" id="localizacao" name="localizacao"
-                                                            placeholder="Rua: José dias, ou https://  " value=""
-                                                            required>
-                                                        <!-- Google Maps -->
-                                                    </div>
-                                                    <div class="field">
-                                                        <label for="risco">Nível de Risco:</label>
-                                                        <select id="risco" name="risco" required>
-                                                            <option value="baixo">Baixo</option>
-                                                            <option value="médio" selected>Médio</option>
-                                                            <option value="alto">Alto</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="row"> <!-- Linha 2-->
-
-                                                        <div class="field-group ">
-                                                            <!-- Checkbox para aceite de políticas -->
-                                                            <div class="col">
-                                                                <input type="checkbox" id="aceitarPoliticas"
-                                                                    name="aceitarPoliticas" value="aceitarPoliticas">
-                                                                <label for="aceitarPoliticas"> Eu li e concordo com as
-                                                                    políticas de
-                                                                    privacidade
+                                                    <!--- <button onclick="exibirDados()">Confirmar</button> -->
+                                                </div>
+    
+                                                <!-- Etapa 4:  Confirmar Detalhes Sobre Riscos Ambientais-->
+    
+                                                <div class="etapa-formulario etapa-4">
+                                                    <fieldset>
+                                                        <div class="formulario">
+    
+                                                            <legend>Confirmar Detalhes Sobre Riscos Ambientais
+                                                            </legend>
+    
+    
+                                                            <div class="field-group">
+                                                                <div class="field">
+                                                                    <div id="dadosCadastrados">
+    
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </fieldset>
-                                                <!-- criar scroll de politicas de opção selecionada style="display: true;"-->
-                                                <div class="row">
-                                                    <div id="politicas" style="display: none;">
-                                                        <h3>Políticas de Privacidade</h3>
-                                                        <p>Estas são as nossas políticas de privacidade, em conformidade
-                                                            com
-                                                            a
-                                                            LGPD:
-                                                        </p>
-                                                        <ol>
-                                                            <li>Coletamos apenas informações necessárias para os fins
-                                                                especificados.
-                                                            </li>
-                                                            <li>As informações pessoais são tratadas de forma
-                                                                confidencial e
-                                                                segura.
-                                                            </li>
-                                                            <li>As informações não serão compartilhadas com terceiros
-                                                                sem
-                                                                consentimento.</li>
-                                                            <li>Os usuários têm o direito de acessar, corrigir e excluir
-                                                                seus
-                                                                dados
-                                                                pessoais.</li>
-                                                        </ol>
-                                                    </div>
-                                                </div>
-                                                <br><br>
-
-                                                <button type="button" id="Next1"
-                                                    onclick="proximoEtapa() ; selecionarEtapa(2)">Continuar</button>
-                                            </div>
-                                            <!-- Etapa 2: Detalhes Sobre Riscos Ambientais -->
-                                        </div>
-                                        <div class="etapas-forms">
-                                            <div class="etapa-formulario etapa-2">
-
-                                                <fieldset>
-                                                    <legend>Detalhes Sobre Riscos Ambientais</legend>
-                                                    <div class="field">
-                                                        <label for="qtdPessoas">Quantidade de Pessoas Afetadas</label>
-                                                        <input type="number" id="qtdPessoas" name="qtdPessoas"
-                                                            placeholder="0" value="" required>
-                                                    </div>
-                                                    <div class="field">
-                                                        <label for="causas">Principais Causas:</label>
-                                                        <select id="causas" name="causas" required>
-                                                            <optgroup label="Principais Causas">
-                                                                <option value="Selecionar"></option>
-                                                                <option value="calor-excessivo">Calor Excessivo</option>
-                                                                <option value="desmatamento">Desmatamento</option>
-                                                                <option value="poluicao">Poluição</option>
-                                                                <option value="alta-temperatura">Alta Temperatura
-                                                                </option>
-                                                                <option value="enchente">Enchente</option>
-                                                                <option value="vento-forte">Vento Forte</option>
-                                                                <option value="chuva-intensa">Chuva Intensa</option>
-                                                                <option value="granizo-de-chuva">Granizo de Chuva
-                                                                </option>
-                                                                <option value="alagamento">Alagamento</option>
-                                                                <option value="deslizamento-de-terra">Deslizamento de
-                                                                    Terra
-                                                                </option>
-                                                                <option value="terremoto">Terremoto</option>
-                                                                <option value="tempestade">Tempestade</option>
-                                                                <option value="furacao">Furacão</option>
-                                                                <option value="incendio-florestal">Incêndio Florestal
-                                                                </option>
-                                                                <option value="poluicao-ar">Poluição do Ar</option>
-                                                                <option value="seca">Seca</option>
-                                                                <option value="tsunami">Tsunami</option>
-                                                                <option value="nevasca">Nevasca</option>
-                                                            </optgroup>
-                                                        </select>
-                                                    </div>
-                                                    <div class="field">
-                                                        <label for="outrasCausas">Outras Causas:</label>
-                                                        <textarea id="outrasCausas" name="outrasCausas"
-                                                            rows="4"></textarea>
-                                                    </div>
-                                                    <div class="field">
-                                                        <label for="sugestao">Elogios e Sugestão de Melhorias:</label>
-                                                        <textarea id="sugestao" name="sugestao" rows="4"></textarea>
-                                                    </div>
-                                                </fieldset>
-
-                                                <!--<button type="button" onclick="proximoEtapa() & exibirDados()">Continuar</button>-->
-                                                <button type="button" onclick="etapaAnterior()">Etapa Anterior</button>
-
-                                                <button type="button" id="Next1"
-                                                    onclick="proximoEtapa() & exibirDados(); selecionarEtapa(3)">Continuar</button>
-
-                                            </div>
-                                        </div>
-                                        <!-- Etapa 3: Detalhes Ambientais -->
-                                        <div class="etapas-forms">
-                                            <div class="etapa-formulario etapa-3">
-
-                                                <section>
-                                                    <fieldset>
-
-                                                        <div id="dados-cadastrado"></div>
+    
+                                                        <button type="button" onclick="etapaAnterior()">Etapa
+                                                            Anterior</button>
+                                                        <button type="submit"
+                                                            onclick=" proximoEtapa() & exibirDados() ">Confirmar</button>
                                                     </fieldset>
-                                                </section>
-                                                <button type="button" onclick="etapaAnterior()">Etapa Anterior</button>
-
-                                                <button type="submit" onclick="enviarFormulario(event)">Enviar</button>
-                                            </div>
-                                            <!--- <button onclick="exibirDados()">Confirmar</button> -->
+    
+                                                    <!--- <button type="submit" onclick="enviarFormulario(event)">Enviar</button> -->
+                                                </div>
+    
                                         </div>
+    
+                                        <!-- Etapa 5: Dashboard -->
+                                        <div class="etapa-formulario etapa-5">
+                                            <fieldset id="Obrigado" class="obrigado">
+                                                <div class="formulario">
+    
+                                                    <div class="col-12">Dashboard</div>
+    
+                                                    <h2>Obrigado!</h2>
+                                                </div>
+                                            </fieldset>
+                                            <br><br>
+                                            <button type="button" onclick="etapaAnterior()">Etapa
+                                                Anterior</button>
+                                            <button onclick=" proximoEtapa() ">Confirmar</button>
+    
+                                        </div>
+    
+    
+                                        <!--<button type="submit" onclick="enviarFormulario(event)">Enviar</button>-->
+                                        <!--- <button onclick="exibirDados()">Confirmar</button> -->
+    
+                                        <!-- Etapa 6: Detalhes Ambientais -->
+                                        <div class="etapas-forms" id="login">
+                                            <div class="etapa-formulario etapa-6">
+                                                <fieldset class="fieldset">
+                                                    <div class="formulario">
+                                                        <legend>Login</legend>
+                                                        <form id="formLogin">
+                                                            <div class="field">
+                                                                <label for="nomeUserLogin">Nome de
+                                                                    Usuário:</label>
+                                                                <input type="text" id="nomeUserLogin" name="nomeUserLogin"
+                                                                    placeholder="mariaSilva">
+                                                            </div>
+                                                            <div class="field">
+                                                                <label for="senhaUserLogin">Senha:</label>
+                                                                <input type="password" id="senhaUserLogin"
+                                                                    name="senhaUserLogin" placeholder="Sua senha" required>
+                                                            </div>
+                                                            <button type="submit">Entrar</button>
+                                                        </form>
+                                                        <p>Não tem uma conta? <a href="#" onclick="eta">Cadastre-se</a>
+                                                        </p>
+                                                    </div>
+                                                    <!--  <button type="submit" onclick="etapaAnterior()">Proximo</button>
+                                                </fieldset>-->
+                                            </div>
+    
+    
+    
+                                            <!---   <button type="submit" onclick="enviarFormulario(event)">Enviar</button>-->
+                                        </div>
+                                        <!--- <button onclick="exibirDados()">Confirmar</button> -->
                                     </div>
-
+                                  
                                 </form>
 
                             </div>
@@ -1372,10 +1677,328 @@
 
     </footer>
 
+    <!--// inserido no script na pasta     <script src="./assets/js/validacaoFormulario.js" defer></script> mas nao funcionou-->
+    <script>  // Login mostrarLogin
+
+        // Função para mostrar o formulário de login
+        function mostrarLogin() {
+            document.getElementById('loginForm').style.display = 'block';
+        }
+
+        // Função para verificar os dados de login
+        document.getElementById('formLogin').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const nomeUserLogin = document.getElementById('nomeUserLogin').value;
+            const senhaUserLogin = document.getElementById('senhaUserLogin').value;
+
+            const dadosSalvos = localStorage.getItem('usuario');
+            if (dadosSalvos) {
+                const usuario = JSON.parse(dadosSalvos);
+
+                // Verifica se o nome de usuário e senha estão corretos
+                if (nomeUserLogin === usuario.nomeUsuario && senhaUserLogin === usuario.senha) {
+                    alert('Login realizado com sucesso!');
+                    // Redireciona para a página principal ou dashboard
+                } else {
+                    alert('Nome de usuário ou senha incorretos.');
+                }
+            } else {
+                alert('Usuário não cadastrado.');
+            }
+            proximoEtapa();
+        });
+    </script>
+
+    <script>//Validar CadastroUsuario
+        function validarCadastro() {
+            const nome = document.getElementById('nomeCadastro').value;
+            const email = document.getElementById('emailCadastro').value;
+            const tipoUsuario = document.getElementById('tipoUsuario').value;
+            const senha = document.getElementById('senhaCadastro').value;
+            const confirmSenha = document.getElementById('confirmSenhaCadastro').value;
+
+            const erroCadastro = document.getElementById('erroCadastro');
+            const erroEmailCadastro = document.getElementById('erroEmailCadastro')
+            const erroSenhaCadastro = document.getElementById('erroSenhaCadastro');
+
+            // Resetar mensagem de erro
+            erroCadastro.textContent = "";
+            erroEmailCadastro.textContent = '';
+            erroSenhaCadastro.textContent = '';
+
+            // Validar campos obrigatórios
+            if (!nome || !email || !tipoUsuario || !senha || !confirmSenha) {
+                erroCadastro.textContent = "Preencha todos os campos.";
+                return;
+            }
+
+
+            // Valida o email
+            if (!validarEmail(email)) {
+                erroEmailCadastro.textContent = "O email não é válido.";
+                return;
+            }
+
+            // Valida a senha
+            if (!validarSenha(senha)) {
+                erroSenhaCadastro.textContent = "A senha não atende aos critérios de segurança.";
+                return;
+            }
+
+            // Validar se as senhas coincidem
+            if (senha !== confirmSenha) {
+                erroCadastro.textContent = "As senhas não coincidem.";
+                return;
+            }
+            // Função para validar o email
+            function validarEmail(email) {
+                var regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return regexEmail.test(email);
+            }
+            // Função para validar a senha
+            function validarSenha(senha) {
+                // Critérios: mínimo de 8 caracteres, pelo menos uma letra maiúscula,
+                // uma letra minúscula, um número e um caractere especial
+                var regexSenha = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+                return regexSenha.test(senha);
+            }
+
+            //Aqui ele chama a proxima etapa que é cadastro de pessoa
+            proximoEtapa();
+
+
+            // Se passar pela validação, pode enviar os dados ou realizar outra ação
+            // Por exemplo, você pode enviar os dados para o servidor ou redirecionar o usuário para outra página
+            // Aqui, vamos apenas exibir uma mensagem de sucesso
+            // alert("Cadastro realizado com sucesso!"); 
+        }
+
+    </script>
+
+
+    <script>//Validar Cadastro Pessoa
+        function validarPessoa() {
+            const nomeUser = document.getElementById('nomeUser').value;
+            const nomeCompleto = document.getElementById('nomeCompleto').value;
+            const telefone = document.getElementById('telefone').value;
+            const localizacao = document.getElementById('localizacao').value;
+            const aceitePoliticas = document.getElementById('aceitarPoliticas').checked;
+
+            const erroAceite = document.getElementById('erroAceite');
+            const erroNomeUser = document.getElementById('erroNomeUser');
+            const erroNomeCompleto = document.getElementById('erroNomeCompleto');
+            const erroTel = document.getElementById('erroTel');
+            const erroLocalizacao = document.getElementById('erroLocalizacao');
+
+            // Resetar mensagens de erro
+            erroAceite.textContent = "";
+            erroNomeUser.textContent = "";
+            erroNomeCompleto.textContent = "";
+            erroTel.textContent = "";
+            erroLocalizacao.textContent = "";
+
+            // Validar campos obrigatórios
+            if (!nomeUser || !nomeCompleto || !telefone || !localizacao) {
+                if (!nomeUser) erroNomeUser.textContent = "Campo obrigatório.";
+                if (!nomeCompleto) erroNomeCompleto.textContent = "Campo obrigatório.";
+                if (!telefone) erroTel.textContent = "Campo obrigatório.";
+                if (!localizacao) erroLocalizacao.textContent = "Campo obrigatório.";
+                return;
+            }
+
+            /*  if (!aceitePoliticas) {
+                  erroAceite.textContent = "É necessário aceitar as políticas de privacidade.";
+                  return;
+              }
+              */
+
+            // Se passar pela validação, avança para o próximo formulário
+            //window.location.href = "form_usuario.html";
+            proximoEtapa();
+
+        }
+    </script>
+
+
+    <script>//validar Ocorrencia
+        function validarOcorrencia() {
+            const risco = document.getElementById('risco').value;
+            const dataOcorrencia = document.getElementById('dataOcorrencia').value;
+            const horaOcorrencia = document.getElementById('horaOcorrencia').value;
+            const localizacaoOcorrencia = document.getElementById('localizacaoOcorrencia').value;
+            const principaisCausas = document.getElementById('principaisCausas').value;
+            const qtdPessoasAfetadas = document.getElementById('qtdPessoasAfetadas').value;
+            const outrasCausas = document.getElementById('outrasCausas').value;
+            const perguntas = document.getElementById('perguntas').value;
+            const elogiosSugestoes = document.getElementById('elogiosSugestoes').value;
+
+            // Resetar mensagens de erro
+            document.getElementById('erroRisco').textContent = "";
+            document.getElementById('erroDataOcorrencia').textContent = "";
+            document.getElementById('erroHoraOcorrencia').textContent = "";
+            document.getElementById('erroLocalizacaoOcorrencia').textContent = "";
+            document.getElementById('erroPrincipaisCausas').textContent = "";
+            document.getElementById('erroqtdPessoasAfetadas').textContent = "";
+            document.getElementById('erroOutrasCausas').textContent = "";
+            document.getElementById('erroPerguntas').textContent = "";
+            document.getElementById('erroElogiosSugestoes').textContent = "";
+
+            // Validar campos obrigatórios
+            if (!risco || !dataOcorrencia || !horaOcorrencia || !localizacaoOcorrencia || !principaisCausas || !qtdPessoasAfetadas) {
+                if (!risco) document.getElementById('erroRisco').textContent = "Campo Risco obrigatório.";
+                if (!dataOcorrencia) document.getElementById('erroDataOcorrencia').textContent = "Campo Data obrigatório.";
+                if (!horaOcorrencia) document.getElementById('erroHoraOcorrencia').textContent = "Campo Horario obrigatório.";
+                if (!localizacaoOcorrencia) document.getElementById('erroLocalizacaoOcorrencia').textContent = "Campo Localização obrigatório.";
+                if (!principaisCausas) document.getElementById('erroPrincipaisCausas').value = "Campo Principais Causas obrigatório.";
+                if (!qtdPessoasAfetadas) document.getElementById('erroqtdPessoasAfetadas').textContent = "Campo Quantidade de Pessoas Afetadas obrigatório.";
+                // if (!outrasCausas) document.getElementById('erroOutrasCausas').textContent = "Campo Outras Causas obrigatório.";
+                //  if (!perguntas) document.getElementById('erroPerguntas').textContent = "Campo Perguntas obrigatório.";
+                // if (!elogiosSugestoes) document.getElementById('erroElogiosSugestoes').textContent = "Campo Elogios e Sugestões obrigatório.";
+
+                return;
+            }
+
+            //Exibir os dados cadastrados
+            const dadosCadastrados = document.getElementById('dadosCadastrados');
+
+            dadosCadastrados.innerHTML = `
+        <fieldset>
+                <form action="submit" id="formPessoa">
+                    <div <strong>Nível de Risco:</strong> ${risco}</div>
+                    <div <strong>Data:</strong> ${dataOcorrencia}</div>
+                    <div <strong>Hora:</strong> ${horaOcorrencia}</div>
+                    <div <strong>Localização da Ocorrência:</strong> ${localizacaoOcorrencia}</div>
+                    <div <strong>Principais Causas:</strong> ${principaisCausas}</div>
+                    <div <strong>Quantidade de Pessoas Afetadas:</strong> ${qtdPessoasAfetadas}</div>
+                    <div <strong>Outras Causas:</strong>${outrasCausas}</div>
+                    <div <strong>Perguntas:</strong> ${perguntas}</div>
+                    <div <strong>Elogios e Sugestão de Melhorias:</strong> ${elogiosSugestoes}</div>
+                    <br>
+                    <br>
+                    <div>
+                        <button onclick="editarDados()">Editar</button>
+                        <button onclick="enviarDados()">Enviar</button>
+                    </div>
+                </form>
+        </fieldset>
+                `;
+
+            proximoEtapa();
+
+        }
+
+        function editarDados() {
+            // Limpar a div de dados cadastrados
+            document.getElementById('dadosCadastrados').innerHTML = "";
+
+            // Rolar para o topo do formulário
+            //  window.scrollTo(0, 0);
+            etapaAnterior();
+
+        }
+
+        /**
+        function enviarDados() {
+            // Obter os dados cadastrados
+            const dadosCadastrados = document.getElementById('dadosCadastrados').innerHTML;
+    
+            // Criar um formulário oculto
+            const formEnvio = document.createElement('form');
+            formEnvio.setAttribute('id', 'formEnvio');
+            formEnvio.setAttribute('action', 'enviar_email.html'); // Altere o  envio de e-mail
+            formEnvio.setAttribute('method', 'post');
+            formEnvio.setAttribute('enctype', 'text/plain');
+    
+            // Criar um campo de entrada para os dados
+            const dadosInput = document.createElement('input');
+            dadosInput.setAttribute('type', 'hidden');
+            dadosInput.setAttribute('name', 'dados');
+            dadosInput.setAttribute('value', dadosCadastrados);
+    
+            // Adicionar o campo de entrada ao formulário
+            formEnvio.appendChild(dadosInput);
+    
+            // Adicionar o formulário à página
+            document.body.appendChild(formEnvio);
+    
+            // Enviar o formulário
+            formEnvio.submit();
+    
+            // Limpar a div de dados cadastrados
+            document.getElementById('dadosCadastrados').innerHTML = "";
+    
+            //window.location.href = "pagina_agradecimento.html";
+    
+        }*/
+
+    </script>
+
+
+    <script>// Função para salvar os dados no localStorage
+        function salvarDados() {
+            const nomeUsuario = document.getElementById('nomeCadastro').value;
+            const email = document.getElementById('emailCadastro').value;
+            const tipoUsuario = document.getElementById('tipoUsuario').value;
+            const senha = document.getElementById('senhaCadastro').value;
+
+            const usuario = {
+                nomeUsuario,
+                email,
+                tipoUsuario,
+                senha
+            };
+
+            // Armazenando os dados
+            localStorage.setItem('usuario', JSON.stringify(usuario));
+        }
+
+        // Função para verificar se o usuário já está cadastrado
+        function verificarUsuario() {
+            // Verifica se já existe algum dado armazenado
+            const dadosSalvos = localStorage.getItem('usuario');
+            if (dadosSalvos) {
+                const usuario = JSON.parse(dadosSalvos);
+
+                // Preenche o formulário com os dados salvos
+                document.getElementById('nomeUser').value = usuario.nomeUsuario;
+                document.getElementById('emailCadastro').value = usuario.email;
+                document.getElementById('tipoUsuario').value = usuario.tipoUsuario;
+                document.getElementById('senhaCadastro').value = usuario.senha;
+            }
+        }
+
+        function preencherDados() {
+            const dadosSalvos = localStorage.getItem('usuario');
+            if (dadosSalvos) {
+                const usuario = JSON.parse(dadosSalvos);
+                document.getElementById('nomeUser').value = usuario.nomeUsuario;
+            }
+        }
+        // Adiciona o evento de 'submit' ao formulário
+        document.getElementById('formCadastro').addEventListener('submit', function (event) {
+            event.preventDefault(); // Previne o comportamento padrão do formulário
+            salvarDados();
+        });
+
+        // Quando a página carrega, verifica se o usuário já está cadastrado
+        document.addEventListener('DOMContentLoaded', verificarUsuario);
+
+    </script>
+
+
+
+
+
+
+
+
     <script src="./assets/js/global.js" defer></script>
 
     <script src="./assets/js/doacao.js" defer></script>
     <script src="./assets/js/contato.js" defer></script>
+    <script src="./assets/js/validacaoFormulario.js" defer></script>
+
     <script src="./assets/js/politicas.js" defer></script> <!-- chekbox politicas implementando -->
 
 </body>
