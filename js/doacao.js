@@ -146,11 +146,11 @@
       if (total === "0,00") {
         alert("Seu carrinho está vazio!")
       } else {   
-        alert(`Obrigado pela sua compra! Valor do pedido: R$${total}\nVolte sempre :) `
+        alert(`Obrigado pela sua compra! Valor do pedido: R$${total}\nVolte sempre :) `);
         setTimeout(() =>{
         document.getElementById("modalId").style.display="inherit";
   }, 2000);
-        );
+        
         document.querySelector(".cart-table tbody").innerHTML = "";
         updateTotal();
       }
