@@ -6,7 +6,7 @@ Este documento apresenta a estrutura do banco de dados do Impacto-Profundo, incl
 
 ## Modelo Conceitual
 
-![Modelo Conceitual](link_para_imagem_conceitual.jpg)
+![Modelo Conceitual](https://github.com/brittoruth/Impacto-Profundo/blob/main/assets/image/bancoDeDados/Modelo%20Conceitual.jpeg)
 
 
 
@@ -25,7 +25,122 @@ Aqui está o modelo lógico do banco de dados. Este modelo traduz o modelo conce
  script SQL:
 
 ```sql
--- Insira aqui o script SQL para criar o banco de dados
+
+----
+-- PostgreSQL database dump--
+
+
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- Name: cliente; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.cliente (
+    nome character varying(100) NOT NULL,
+    cpf character varying(11) NOT NULL,
+    cod_cliente integer NOT NULL
+);
+
+
+--
+-- Name: estoque; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.estoque (
+    cod_produto_estoque integer NOT NULL,
+    quantidade integer
+);
+
+
+--
+-- Name: existe; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.existe (
+    fk_cod_produto integer,
+    fk_cod_produto_estoque integer
+);
+
+
+--
+-- Name: item_pedido_contem; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.item_pedido_contem (
+    fk_pedido_cod_cliente integer,
+    fk_pedido_doc_produto integer,
+    fk_cod_produto integer
+);
+
+
+--
+-- Name: pedido; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.pedido (
+    cod_cliente integer,
+    cod_pedido integer,
+    data date,
+    fk_cliente_cod_cliente integer
+);
+
+
+--
+-- Name: produto; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.produto (
+    cod_produto integer NOT NULL,
+    valor double precision,
+    nome character varying(50)
+);
+
+
+--
+-- Name: cliente cliente_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.cliente
+    ADD CONSTRAINT cliente_pkey PRIMARY KEY (cod_cliente);
+
+
+--
+-- Name: estoque estoque_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.estoque
+    ADD CONSTRAINT estoque_pkey PRIMARY KEY (cod_produto_estoque);
+
+
+--
+-- Name: produto produto_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.produto
+    ADD CONSTRAINT produto_pkey PRIMARY KEY (cod_produto);
+
+
+--
+-- PostgreSQL database dump complete
+--
+
+
+
 
 
 !modeloconsulta](link_para_imagem_sqlite.jpg)
