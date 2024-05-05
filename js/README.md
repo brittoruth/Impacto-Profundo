@@ -15,7 +15,7 @@ Nesta seção, apresentamos a validação do formulario de contato com: Cadastro
 Script JavaScript:
 
 ```Js
---       <script>//Validar CadastroUsuario
+--      //Validar CadastroUsuario
         function validarCadastro() {
             const nome = document.getElementById('nomeCadastro').value;
             const email = document.getElementById('emailCadastro').value;
@@ -37,7 +37,6 @@ Script JavaScript:
                 erroCadastro.textContent = "Preencha todos os campos.";
                 return;
             }
-
 
             // Valida o email
             if (!validarEmail(email)) {
@@ -71,16 +70,9 @@ Script JavaScript:
 
             //Aqui ele chama a proxima etapa que é cadastro de pessoa
             proximoEtapa();
-
-
-            // Se passar pela validação, pode enviar os dados ou realizar outra ação
-            // Por exemplo, você pode enviar os dados para o servidor ou redirecionar o usuário para outra página
-            // Aqui, vamos apenas exibir uma mensagem de sucesso
-            // alert("Cadastro realizado com sucesso!"); 
         }
 
   
-
 
   //Validar Cadastro Pessoa
         function validarPessoa() {
@@ -112,14 +104,7 @@ Script JavaScript:
                 return;
             }
 
-            /*  if (!aceitePoliticas) {
-                  erroAceite.textContent = "É necessário aceitar as políticas de privacidade.";
-                  return;
-              }
-              */
-
-            // Se passar pela validação, avança para o próximo formulário
-            //window.location.href = "form_usuario.html";
+            // Se passar pela validação, avança para o próximo formulári
             proximoEtapa();
 
         }
@@ -157,11 +142,8 @@ Script JavaScript:
                 if (!localizacaoOcorrencia) document.getElementById('erroLocalizacaoOcorrencia').textContent = "Campo Localização obrigatório.";
                 if (!principaisCausas) document.getElementById('erroPrincipaisCausas').value = "Campo Principais Causas obrigatório.";
                 if (!qtdPessoasAfetadas) document.getElementById('erroqtdPessoasAfetadas').textContent = "Campo Quantidade de Pessoas Afetadas obrigatório.";
-                // if (!outrasCausas) document.getElementById('erroOutrasCausas').textContent = "Campo Outras Causas obrigatório.";
-                //  if (!perguntas) document.getElementById('erroPerguntas').textContent = "Campo Perguntas obrigatório.";
-                // if (!elogiosSugestoes) document.getElementById('erroElogiosSugestoes').textContent = "Campo Elogios e Sugestões obrigatório.";
 
-                return;
+ return;
             }
 
             //Exibir os dados cadastrados
@@ -197,13 +179,9 @@ Script JavaScript:
             // Limpar a div de dados cadastrados
             document.getElementById('dadosCadastrados').innerHTML = "";
 
-            // Rolar para o topo do formulário
-            //  window.scrollTo(0, 0);
             etapaAnterior();
 
         }
-
-
 
     // Função para salvar os dados no localStorage
         function salvarDados() {
