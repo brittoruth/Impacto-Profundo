@@ -1,10 +1,4 @@
-
-
-setTimeout(() =>{
-    document.getElementById("modalId").style.display="inherit";
-  }, 5000);
-  
-  function escolher(){
+    function escolher(){
     const select = document.querySelector(".categoria");
     const selectOption = select.options[select.selectedIndex];
     let valor = selectOption.value;
@@ -156,6 +150,9 @@ setTimeout(() =>{
         );
         document.querySelector(".cart-table tbody").innerHTML = "";
         updateTotal();
+        setTimeout(() =>{
+        document.getElementById("modalId").style.display="inherit";
+        }, 2000);
       }
     }
     
