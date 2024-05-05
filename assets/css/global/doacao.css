@@ -99,7 +99,7 @@
   height: 35px;
   align-items: center;
   justify-content: center;
-  
+  color:var(--cor-fonte);
 }
 .removerCarrinho{
   display: flex;
