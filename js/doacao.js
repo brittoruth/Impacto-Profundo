@@ -1,10 +1,4 @@
-
-
-setTimeout(() =>{
-    document.getElementById("modalId").style.display="inherit";
-  }, 5000);
-  
-  function escolher(){
+   function escolher(){
     const select = document.querySelector(".categoria");
     const selectOption = select.options[select.selectedIndex];
     let valor = selectOption.value;
@@ -153,6 +147,9 @@ setTimeout(() =>{
         alert("Seu carrinho está vazio!")
       } else {   
         alert(`Obrigado pela sua compra! Valor do pedido: R$${total}\nVolte sempre :) `
+        setTimeout(() =>{
+        document.getElementById("modalId").style.display="inherit";
+  }, 2000);
         );
         document.querySelector(".cart-table tbody").innerHTML = "";
         updateTotal();
