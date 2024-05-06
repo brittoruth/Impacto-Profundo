@@ -1,5 +1,6 @@
 
 
+
 .error {
     color: red;
     font-size: 1.5rem;
@@ -25,8 +26,8 @@
     max-height: 580px;
     overflow-y: scroll;;*/
     width: 100%;
-    margin: 20px;
-    padding: 20px;
+    /* margin: 20px;*/
+     /*padding: 20px;*/
 }
 
 
@@ -117,12 +118,14 @@
 
 .etapa-formulario {
 
-
+width: 100%;
     display: none;
     font-size: 15px;
     flex: 1;
     margin-top: 10px;
     margin-bottom: 0px;
+    margin-left: 0;
+    padding-left: 0;
 
     /* BLOCO Ocupa o restante do espaço disponível na mesma linha para aparecer como aba */
 
@@ -166,7 +169,7 @@
 
 
 /*======================================= FORMULARIO =========================================*/
-
+/*
 form {
 
     margin-top: 0px;
@@ -178,7 +181,20 @@ form {
     border: none !important;
     font-family: "Poppins", sans-serif;
 }
+*/
 
+
+form {
+    margin-top: 0px;
+    /* padding-right: 30px; */
+    /* padding-left: 30px; */
+    max-width: auto;
+    height: auto;
+    box-sizing: border-box;
+    border: none !important;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+}
 .linha-contato {
     height: auto;
     padding-bottom: 30px;
@@ -202,21 +218,24 @@ div.etapas {
     padding: 0;
 }
 
+/*
+
 div form fieldset {
-    /*    background-color: rgb(230, 96, 176);*/
-
-    margin-top: 0px;
-    margin-bottom: 6px;
-    border-radius: 4px;
-    margin-left: 8px;
-    padding-right: 32px;
-    padding-left: 17px;
-
+    /* background-color: rgb(230, 96, 176); */
+    /* margin-top: 0px; */
+    /* margin-bottom: 6px; */
+    /* border-radius: 4px; */
+    /* margin-left: 8px; */
+    /* padding-right: 32px; */
+    /* padding-left: 17px;*
 }
+*/
+/*
 #fieldset{
     padding: 20px;
 
 }
+*/
 
 div.field-cadastroForm{
     border: 0;
@@ -272,7 +291,7 @@ form .field-group {
 
 }
 
-
+/*
 form input,
 select,
 optgroup,
@@ -289,6 +308,23 @@ textarea {
     box-shadow: 0 0 0.3125rem #743711;
 
 }
+
+*/
+/*Correção responsividade formulario*/
+form input, select, optgroup, option, textarea {
+    background-color: #faf5f3bb;
+    padding: 0.90rem;
+    border-spacing: 0.125rem solid transparent;
+    border: 0.125rem solid transparent;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    transition: border-color 0.3s;
+    box-shadow: 0.3s;
+    box-shadow: 0 0 0.3125rem #743711;
+    width: 100%;
+}
+
+
 
 
 form input:hover,
