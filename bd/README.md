@@ -6,16 +6,14 @@ Este documento apresenta a estrutura do banco de dados do Impacto-Profundo, incl
 
 ## Modelo Conceitual
 
-![Modelo Conceitual](https://github.com/brittoruth/Impacto-Profundo/blob/main/assets/image/bancoDeDados/Modelo%20Conceitual.jpeg)
+![Modelo Conceitual](https://github.com/brittoruth/Impacto-Profundo/blob/main/assets/image/bancoDeDados/modeloConceitural.png)
 (Modelo gerado por BRModelo)
 
 Nesta seção, apresentamos o modelo conceitual do banco de dados o modelo conceitual descreve as entidades, relacionamentos e atributos de forma abstrata e independente do sistema de gerenciamento de banco de dados.
 
 ## Modelo Lógico
 
-![Modelo Lógico ](https://github.com/brittoruth/Impacto-Profundo/blob/main/assets/image/bancoDeDados/Modelo%20Logico.jpeg)
-(Modelo gerado por BRModelo)
-
+![Modelo Conceitual](https://github.com/brittoruth/Impacto-Profundo/blob/main/assets/image/bancoDeDados/modeloLogico.png)
 
 Aqui está o modelo lógico do banco de dados. Este modelo traduz o modelo conceitual em termos mais técnicos, mostrando as tabelas, colunas, chaves primárias, chaves estrangeiras e outras restrições necessárias para implementar o banco de dados em um sistema de gerenciamento de banco de dados mais específico neste caso utilizamos o Sqlite.
 
@@ -259,8 +257,10 @@ ALTER TABLE ONLY public.produto
 
 </details>
 
-![Modelo Consulta ](https://github.com/brittoruth/Impacto-Profundo/blob/main/assets/image/bancoDeDados/sqliteJoinTotalProdutosCompradosPorCLiente.jpeg)
+## Modelo Físico 
 
+![Modelo Fisico ](https://github.com/brittoruth/Impacto-Profundo/blob/main/assets/image/bancoDeDados/modeloFisico.png)
+Modelo gerado por Sqliteonline.com
 
 
 
