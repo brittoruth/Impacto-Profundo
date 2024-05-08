@@ -1,11 +1,15 @@
 
-
-
 .error {
     color: red;
-    font-size: 1.5rem;
+    font-size: x-small;
     padding-left: 20px;
+    padding-top: 1;
     margin: 0;
+
+}
+.col-6 .error{
+    margin: 1;
+    padding-top: 1;
 
 }
 .facalogin{
@@ -137,6 +141,18 @@ width: 100%;
     /* BLOCO Ocupa o restante do espaço disponível na mesma linha para aparecer como aba */
 
 }
+.etapa-atual#login {
+    width: 100%;
+    display: none;
+    font-size: 15px;
+    flex: 1;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 0;
+    padding-left: 0;
+
+}
+
 
 /*para exibir os dados cadastrados JS*/
 #dados-cadastrado {
@@ -169,19 +185,6 @@ width: 100%;
 
 
 /*======================================= FORMULARIO =========================================*/
-/*
-form {
-
-    margin-top: 0px;
-    padding-right: 30px;
-    padding-left: 30px;
-    max-width: auto;
-    height: auto;
-    box-sizing: border-box;
-    border: none !important;
-    font-family: "Poppins", sans-serif;
-}
-*/
 
 
 form {
@@ -218,24 +221,6 @@ div.etapas {
     padding: 0;
 }
 
-/*
-
-div form fieldset {
-    /* background-color: rgb(230, 96, 176); */
-    /* margin-top: 0px; */
-    /* margin-bottom: 6px; */
-    /* border-radius: 4px; */
-    /* margin-left: 8px; */
-    /* padding-right: 32px; */
-    /* padding-left: 17px;*
-}
-*/
-/*
-#fieldset{
-    padding: 20px;
-
-}
-*/
 
 div.field-cadastroForm{
     border: 0;
@@ -277,41 +262,28 @@ form .field {
 
 }
 
-/*
-form .field {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    /*estica todos os campos
-    margin: 8px;
-}*/
 
 form .field-group {
     display: flex;
 
 }
 
-/*
-form input,
-select,
-optgroup,
-option,
-textarea {
-    background-color: #faf5f3bb;
-    padding: 0.90rem;
-    border-spacing: 0.125rem solid transparent;
-    border: 0.125rem solid transparent;
-    border-radius: 4px;
-    margin-bottom: 0.5rem;
-    transition: border-color 0.3s;
-    box-shadow: 0.3s;
-    box-shadow: 0 0 0.3125rem #743711;
 
+/*Correção responsividade formulario*/
+form input, select, textarea {
+  
+    width: 100%;
 }
 
-*/
-/*Correção responsividade formulario*/
-form input, select, optgroup, option, textarea {
+/*Correção borda na caixa de politicas*/
+input#aceitarPoliticas {
+    margin: none !;
+    box-shadow: none;
+   margin-left: 0 !important;
+}
+
+
+form input, select, textarea {
     background-color: #faf5f3bb;
     padding: 0.90rem;
     border-spacing: 0.125rem solid transparent;
@@ -321,7 +293,6 @@ form input, select, optgroup, option, textarea {
     transition: border-color 0.3s;
     box-shadow: 0.3s;
     box-shadow: 0 0 0.3125rem #743711;
-    width: 100%;
 }
 
 
@@ -331,10 +302,6 @@ form input:hover,
 input:focus,
 select:hover,
 select:focus,
-optgroup:hover,
-optgroup:focus,
-option:hover,
-option:focus,
 textarea:hover,
 textarea:focus {
     outline: none !important;
@@ -408,18 +375,6 @@ button {
     background-color: rgb(255, 255, 255);
     padding-bottom: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /***============================== FONTE SIZE ============================== ***/
