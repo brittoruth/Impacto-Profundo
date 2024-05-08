@@ -127,11 +127,11 @@
                 return;
             }
 
-            /*  if (!aceitePoliticas) {
+             if (!aceitePoliticas) {
                   erroAceite.textContent = "É necessário aceitar as políticas de privacidade.";
                   return;
               }
-              */
+              
 
             // Se passar pela validação, avança para o próximo formulário
             //window.location.href = "form_usuario.html";
@@ -172,9 +172,6 @@
                 if (!localizacaoOcorrencia) document.getElementById('erroLocalizacaoOcorrencia').textContent = "Campo Localização obrigatório.";
                 if (!principaisCausas) document.getElementById('erroPrincipaisCausas').value = "Campo Principais Causas obrigatório.";
                 if (!qtdPessoasAfetadas) document.getElementById('erroqtdPessoasAfetadas').textContent = "Campo Quantidade de Pessoas Afetadas obrigatório.";
-                // if (!outrasCausas) document.getElementById('erroOutrasCausas').textContent = "Campo Outras Causas obrigatório.";
-                //  if (!perguntas) document.getElementById('erroPerguntas').textContent = "Campo Perguntas obrigatório.";
-                // if (!elogiosSugestoes) document.getElementById('erroElogiosSugestoes').textContent = "Campo Elogios e Sugestões obrigatório.";
 
                 return;
             }
