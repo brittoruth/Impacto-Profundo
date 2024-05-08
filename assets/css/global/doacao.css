@@ -255,3 +255,40 @@ dialog p {
 iframe{
 margin-left: 20px;
 }
+
+/*botão todos*/
+select.categoria {
+  margin: 15px;
+  padding: 10px;
+  height: auto;
+}
+/*nome da sessao*/
+h1.loja {
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+margin: 2%;
+}
+
+h6.loja {
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  margin: 2%;
+
+}
+section.loja {
+  font-family: Arial, sans-serif;
+  font-size: 1.2em;
+  line-height: 2.0;
+  margin: 2%;
+}
+
+p.loja {
+  font-size: 0.8em;
+  color: #484848;
+  margin-bottom: 1.25em;
+  text-align: center;
+}
