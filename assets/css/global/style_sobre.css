@@ -112,7 +112,9 @@ h2.parceiro {
     height: 500px;
 
 }
-
+#conteudo_2{
+    display:flex;
+}
 
 
 .slider-content {
