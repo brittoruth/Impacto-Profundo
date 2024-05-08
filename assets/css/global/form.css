@@ -268,7 +268,6 @@ form .field-group {
 
 }
 
-
 /*Correção responsividade formulario*/
 form input, select, textarea {
   
@@ -277,8 +276,8 @@ form input, select, textarea {
 
 /*Correção borda na caixa de politicas*/
 input#aceitarPoliticas {
-    margin: none !;
-    box-shadow: none;
+    margin: none !important;
+    box-shadow: none !important;
    margin-left: 0 !important;
 }
 
